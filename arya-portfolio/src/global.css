@@ -2,3 +2,6 @@ body {
     color: #373a44;
 }
 
+.button-container {
+    filter: invert(19%) sepia(22%) saturate(376%) hue-rotate(189deg) brightness(95%) contrast(88%);
+}

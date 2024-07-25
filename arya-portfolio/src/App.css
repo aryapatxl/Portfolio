@@ -13,7 +13,7 @@
   display: flex-start;
   align-items: flex-start;
   justify-content: left;
-  font-size: calc(20px + 2vmin);
+  font-size: calc(5px + 2vmin);
   font-weight: 900;
   text-align: left;
   padding-left: calc(30px + 2vmin);
@@ -22,3 +22,23 @@
   
   font-size: 40vw; /* Scalable font size */
 }
+.image-button {
+  width: 25px; /* Adjust the width to make the button smaller */
+  margin-top: -10px;
+}
+
+.button-container {
+  width: 25px; /* Adjust the width to make the button smaller */
+  height: auto; /* Maintain aspect ratio */
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.image-button:hover {
+  transform: scale(1.1);
+}
+
+
