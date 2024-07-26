@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color:  #f8f8f8;;
+  background-color:  #ebe4df;
 }
 
 .App-logo {
@@ -9,17 +9,18 @@
 }
 
 .App-header {
+  font-family: 'Black Han Sans', sans-serif;
   min-height: 40vh;
   display: flex-start;
   align-items: flex-start;
   justify-content: left;
-  font-size: calc(5px + 2vmin);
+  font-size: calc(2px + 2vmin);
   font-weight: 900;
   text-align: left;
-  padding-left: calc(30px + 2vmin);
+  padding-top: calc(65px + 2vmin);
+  padding-left: calc(300px + 2vmin);
 }
 #header {
-  
   font-size: 40vw; /* Scalable font size */
 }
 .image-button {
@@ -42,11 +43,68 @@
 }
 
 .camera-button {
-  margin-top: -8px;
+  margin-top: -11px;
   width: calc(15px + 2vmin) !important;
 }
 
 .email-button{
   margin-bottom: 2.1px;
   width: calc(8.3px + 2vmin)
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ebe4df;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.section-header {
+  font-size: calc(3px + 2vmin);
+  font-weight: bold;
+  margin: 20px 0;
+  text-align: left;
+  padding-top: calc(-200px + 2vmin);
+  padding-left: calc(300px + 2vmin);
+  padding-right: calc(100px + 2vmin);
+}
+
+.experience-item {
+  display: flex;
+  align-items: flex;
+  text-align: left;
+  padding-left: calc(310px + 1vmin);
+  padding-right: calc(500px + 1vmin);
+}
+
+.experience-item i {
+  font-size: 1em;
+  margin-right: 20px;
+}
+
+.experience-item {
+  margin: 0 0 10px 0;
+  font-size: calc(5px + 2vmin);
+  font-weight: bold;
+  
+}
+
+.experience-item p {
+  margin: 0;
+}
+
+.experience-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-item ul li {
+  margin-bottom: 10px;
+}
+
+.FellowSpace  {
+  padding-top: calc(20px + 2vmin)
 }
