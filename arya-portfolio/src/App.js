@@ -1,5 +1,6 @@
 import "./global.css"
 import './App.css';
+import "./fonts.css"
 import githubLogo from './images/githubLogo.png'
 import LinkedinLogo from './images/LinkedinLogo.png'
 import CameraIcon from './images/CameraIcon.png'
@@ -8,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header" role="banner">
-        <h1 className="rakkas-regular">Arya Patel</h1>
+        <h1 className="custom-font">Arya Patel</h1>
         <div className="button-container">
           <a href="https://github.com/aryapatxl" target="_blank" rel="github">
             <img src={githubLogo} alt="GitHub Logo" className="image-button" />
@@ -26,7 +27,7 @@ function App() {
       </header>
       <main>
         
-        <p className="rakkas-regular">asdflkasdj;fakdfkas</p>
+        
       </main>
     </div>
   );

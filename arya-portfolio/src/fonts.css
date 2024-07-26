@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Black Han Serif';
+    src: url('./fonts/ttf/black-han-sans-2-400-normal.ttf') format('truetype'); /* Adjust the path and format as needed */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  h1 {
+    font-family: 'Black Han Serif', sans-serif;
+  }
+  .custom-font {
+    font-family: 'Black Han Serif', sans-serif;
+  }
