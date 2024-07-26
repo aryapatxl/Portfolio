@@ -108,3 +108,11 @@ body {
 .FellowSpace  {
   padding-top: calc(20px + 2vmin)
 }
+
+.red-arrow {
+  margin-top: 60px;
+  width: calc(15px + 2vmin) !important;
+  padding-left: calc(110px + 2vmin);
+  transform: translateX(105px) rotate(-120deg)
+}
+

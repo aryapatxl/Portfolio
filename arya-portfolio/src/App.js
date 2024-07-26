@@ -6,6 +6,7 @@ import githubLogo from './images/githubLogo.png'
 import LinkedinLogo from './images/LinkedinLogo.png'
 import CameraIcon from './images/CameraIcon.png'
 import EmailIcon from './images/emailIcon.png'
+import RedArrow1 from './images/red arrow.png'
 function App() {
   return (
     <div className="App">
@@ -26,9 +27,25 @@ function App() {
             <img src={CameraIcon} alt="Camera Logo" className=" image-button camera-button" />
           </a>
         </div>
+        <img src={RedArrow1} alt="Red Arrow" className="red-arrow" />
+
       </header>
       <main>
       <body>
+    
+      <section>
+    <h1 class="section-header">About</h1>
+
+    <div class="experience-item">
+      <i class="fas fa-code"></i>
+      <div>
+        <p> Hi! I'm Arya. I am an aspiring engineer, aspiring author and photographer.   </p>
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </section>
   <section>
     <h1 class="section-header E">Experience</h1>
 
@@ -49,7 +66,7 @@ function App() {
         <h2>Software Engineering Intern, Reliance Steel & Aluminum Co.</h2>
         <p>Jun 2023 - Sep 2023</p>
         <ul>
-          <li>Devised creative solutions to debug and develop the company's Web API's, E-commerce store, and perform unit testing, contributing to the overall functionality and performance of the systems. Collaborated with a skilled development team, engaging in daily meetings to assess project progress, identify areas for improvement, and ensure efficient delivery of high-quality software solutions.</li>
+          <li class="peak">Devised creative solutions to debug and develop the company's Web API's, E-commerce store, and perform unit testing, contributing to the overall functionality and performance of the systems. Collaborated with a skilled development team, engaging in daily meetings to assess project progress, identify areas for improvement, and ensure efficient delivery of high-quality software solutions.</li>
         </ul>
       </div>
     </div>
