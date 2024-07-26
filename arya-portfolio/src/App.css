@@ -23,22 +23,30 @@
   font-size: 40vw; /* Scalable font size */
 }
 .image-button {
-  width: 25px; /* Adjust the width to make the button smaller */
+  width: calc(10px + 2vmin); /* Adjust the width to make the button smaller */
   margin-top: -10px;
 }
 
 .button-container {
-  width: 25px; /* Adjust the width to make the button smaller */
-  height: auto; /* Maintain aspect ratio */
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  display: inline-block;
-  transition: transform 0.2s;
+  margin-top: 1px; /* Adjust this to control space between header and buttons */
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  position: relative;
+  gap: 15px; /* Adjust the gap between buttons as needed */
 }
+
 
 .image-button:hover {
   transform: scale(1.1);
 }
 
+.camera-button {
+  margin-top: -8px;
+  width: calc(15px + 2vmin) !important;
+}
 
+.email-button{
+  margin-bottom: 2.1px;
+  width: calc(8.3px + 2vmin)
+}
