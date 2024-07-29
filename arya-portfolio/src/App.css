@@ -17,8 +17,9 @@
   font-size: calc(2px + 2vmin);
   font-weight: 900;
   text-align: left;
-  padding-top: calc(65px + 2vmin);
-  padding-left: calc(300px + 2vmin);
+  max-width: 60%;
+  margin-left: 10%;
+  margin-top: 10%;
 }
 #header {
   font-size: 40vw; /* Scalable font size */
@@ -59,29 +60,29 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
+  margin-left: 8%;
 }
 
 .section-header {
+  display: flex;
   font-size: calc(3px + 2vmin);
   font-weight: bold;
-  margin: 20px 0;
   text-align: left;
-  padding-top: calc(-200px + 2vmin);
-  padding-left: calc(300px + 2vmin);
-  padding-right: calc(100px + 2vmin);
+  max-width: 60%;
+  margin-left: 2%;
 }
 
 .experience-item {
   display: flex;
   align-items: flex;
   text-align: left;
-  padding-left: calc(310px + 1vmin);
-  padding-right: calc(500px + 1vmin);
+  max-width: 60%;
+  margin-left: 8%;
 }
 
 .experience-item i {
   font-size: 1em;
-  margin-right: 20px;
+
 }
 
 .experience-item {
@@ -99,6 +100,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  transition: width 1s ease, margin 1s ease;
 }
 
 .experience-item ul li {
@@ -114,5 +116,31 @@ body {
   width: calc(15px + 2vmin) !important;
   padding-left: calc(110px + 2vmin);
   transform: translateX(105px) rotate(-120deg)
+}
+.about-block {
+  margin-top: -15%;
+}
+
+.experience-block {
+  margin-top: 5%
+}
+@media (max-width: 450px) {
+  .experience-item {
+    display: flex;
+    align-items: flex;
+    text-align: left;
+    max-width: 100%;
+    margin-left: -10%;
+    margin-right: 5%; 
+  } 
+
+  .about-block {
+    margin-top: -60%;
+  }
+
+  .section-header {
+    margin-left: -5%; /* No margin on the left */
+    margin-right: 0%; /* No margin on the right */
+  }
 }
 

@@ -33,7 +33,7 @@ function App() {
       <main>
       <body>
     
-      <section>
+      <section class="about-block">
     <h1 class="section-header">About</h1>
 
     <div class="experience-item">
@@ -46,7 +46,7 @@ function App() {
       </div>
     </div>
   </section>
-  <section>
+  <section class="experience-block" >
     <h1 class="section-header E">Experience</h1>
 
     <div class="experience-item">
