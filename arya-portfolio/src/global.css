@@ -49,13 +49,13 @@ body {
 .experience-item h2 {
   font-family: 'Serif', sans-serif;
   font-weight: 700; /* Ensure the weight matches the imported font */
-  font-size: calc(4px + 1vmin);
+  font-size: calc(6px + 1vmin);
 }
 
 .experience-item p, 
 .experience-item li {
   font-family: "Serif", sans-serif;
   font-weight: 100;
-  font-size: calc(3px + 1vmin);
+  font-size: calc(5px + 1vmin);
 }
 

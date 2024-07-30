@@ -1,12 +1,13 @@
 import "./global.css";
 import './App.css';
-
 import "@fontsource/black-han-sans"
 import githubLogo from './images/githubLogo.png'
 import LinkedinLogo from './images/LinkedinLogo.png'
 import CameraIcon from './images/CameraIcon.png'
 import EmailIcon from './images/emailIcon.png'
 import RedArrow1 from './images/redArrow1.png'
+import slackImage from './images/slackImage.jpg'
+import SwipeToSlide from "./Carousel";
 function App() {
   return (
     <div className="App">
@@ -46,6 +47,12 @@ function App() {
       </div>
     </div>
   </section>
+
+  <section class="projects-block">
+  <h1 class="section-header">Projects</h1>
+    <SwipeToSlide/>
+  </section>
+
   <section class="experience-block" >
     <h1 class="section-header E">Experience</h1>
 
