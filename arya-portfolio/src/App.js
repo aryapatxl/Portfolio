@@ -6,7 +6,7 @@ import githubLogo from './images/githubLogo.png'
 import LinkedinLogo from './images/LinkedinLogo.png'
 import CameraIcon from './images/CameraIcon.png'
 import EmailIcon from './images/emailIcon.png'
-import RedArrow1 from './images/red arrow.png'
+import RedArrow1 from './images/redArrow1.png'
 function App() {
   return (
     <div className="App">

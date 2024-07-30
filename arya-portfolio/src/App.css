@@ -112,13 +112,13 @@ body {
 }
 
 .red-arrow {
-  margin-top: 60px;
-  width: calc(15px + 2vmin) !important;
+  margin-top: -15px;
+  width: calc(90px + 2vmin) !important;
   padding-left: calc(110px + 2vmin);
-  transform: translateX(105px) rotate(-120deg)
+
 }
 .about-block {
-  margin-top: -15%;
+  margin-top: -10%;
 }
 
 .experience-block {
@@ -141,6 +141,13 @@ body {
   .section-header {
     margin-left: -5%; /* No margin on the left */
     margin-right: 0%; /* No margin on the right */
+  }
+
+  .red-arrow {
+    margin-top: -2px;
+    width: calc(60px + 2vmin) !important;
+    padding-left: calc(90px + 2vmin);
+  
   }
 }
 
