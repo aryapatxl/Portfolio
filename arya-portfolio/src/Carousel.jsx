@@ -34,13 +34,17 @@ function SwipeToSlide() {
           </div>
 
           <div>
+            <Link to="/AIConversationCatalyst">
             <img src={epikImage} className="carousel-image" />
+            </Link>
           </div>
           <div>
             <img src={spotifyImage} className="carousel-image" />
           </div>
           <div>
+            <Link to="/FinancialCalculatorAPI">
             <img src={CalcImage} className="carousel-image" />
+            </Link>
           </div>
         </Slider>
 

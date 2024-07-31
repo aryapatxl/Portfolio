@@ -16,7 +16,7 @@ function RouterComponent() {
                 <Route path="/Warrants" element={<WarrantsPage />} />
                 <Route path="/AIConversationCatalyst" element={<EpikPage />} />
                 <Route path="/AlbumSearcher" element={<SpotifyPage />} />
-                <Route path="/CalculatorAPI" element={<CalcPage />} />
+                <Route path="/FinancialCalculatorAPI" element={<CalcPage />} />
             </Routes>
         </Router>
     );
