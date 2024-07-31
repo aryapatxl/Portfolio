@@ -32,6 +32,7 @@ body {
   font-weight: 400;
   margin: 20px 0;
   text-align: center;
+
 }
 
 .experience-item {
@@ -161,7 +162,7 @@ body {
 
 }
 .about-block {
-  margin-top: -20%;
+  margin-top: -10%;
 }
 
 .experience-block {
@@ -176,7 +177,6 @@ body {
   .App-header{
     margin-top: 20%;
   }
-
 
   .experience-item {
     display: flex;

@@ -1,0 +1,50 @@
+
+
+
+.slack-bot {
+    background-color: #584566;
+}
+
+.App-head {
+    font-family: 'Black Han Sans', sans-serif;
+    min-height: 40vh;
+    display: flex-start;
+    align-items: flex-start;
+    justify-content: left;
+    font-size: calc(2px + 2vmin);
+    font-weight: 900;
+    text-align: left;
+    max-width: 60%;
+    margin-left: 10%;
+    margin-top: 10%;
+    color: #ebe4df;
+}
+
+.proj {
+    font-family: Arial, sans-serif;
+    color: #ebe4df;
+    font-weight: 100;
+    font-size: calc(1rem + 1vw);
+}
+
+.section-head {
+    display: flex;
+    font-size: calc(3px + 2vmin);
+    font-weight: bold;
+    text-align: left;
+    margin-top: 2%;
+    color: #ebe4df;
+    background-color: #584566;
+}
+
+.about-p {
+    margin-top: 3%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    text-align: left;
+    margin-left: 10.2%;
+    transition: margin 0.3s ease;
+    max-width: 60%;
+}
+
