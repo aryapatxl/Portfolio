@@ -57,6 +57,17 @@ function App() {
     <h1 class="section-header E">Experience</h1>
 
     <div class="experience-item">
+      <i class="fas fa-project-diagram"></i>
+      <div>
+        <h2>Project Manager, Boston University, Spark!</h2>
+        <p>Sep 2023 - May 2024</p>
+        <ul>
+          <li>Managed data science projects for NBC, The Grio & The City of Boston. Facilitated client interactions and chaired meetings, ensuring clear communication and alignment on project goals. Guided teams using Agile methodologies to develop and execute a strategic roadmap for technical projects.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience-item">
       <i class="fas fa-code"></i>
       <div>
         <h2>Software Engineering Intern, Glocal</h2>
@@ -70,21 +81,10 @@ function App() {
     <div class="experience-item">
       <i class="fas fa-laptop-code"></i>
       <div>
-        <h2>Software Engineering Intern, Reliance Steel & Aluminum Co.</h2>
+        <h2>Software Engineering Intern, Reliance Inc.</h2>
         <p>Jun 2023 - Sep 2023</p>
         <ul>
           <li class="peak">Devised creative solutions to debug and develop the company's Web API's, E-commerce store, and perform unit testing, contributing to the overall functionality and performance of the systems. Collaborated with a skilled development team, engaging in daily meetings to assess project progress, identify areas for improvement, and ensure efficient delivery of high-quality software solutions.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="experience-item">
-      <i class="fas fa-project-diagram"></i>
-      <div>
-        <h2>Project Manager, Boston University, Spark!</h2>
-        <p>Sep 2023 - May 2024</p>
-        <ul>
-          <li>Managed data science projects for NBC, The Grio & The City of Boston. Facilitated client interactions and chaired meetings, ensuring clear communication and alignment on project goals. Guided teams using Agile methodologies to develop and execute a strategic roadmap for technical projects.</li>
         </ul>
       </div>
     </div>
@@ -96,6 +96,17 @@ function App() {
         <p>Mar 2023 - May 2023</p>
         <ul>
           <li>Spearheaded the implementation of Python-based data processing techniques, resulting in a remarkable 55% increase in processing efficiency. Employed advanced data cleaning, filtering, aggregation, and merging methods to handle large volumes of raw data effectively. Developed over 30 interactive data visualizations related to environmental and social justice using Flourish, enabling stakeholders to gain valuable insights and make data-driven decisions.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience-item">
+      <i class="fas fa-project-diagram"></i>
+      <div>
+        <h2>Computer Science Instructor, Juni Learning</h2>
+        <p>June 2022 - May 2023</p>
+        <ul>
+          <li>	Authored customized lesson plans by adapting to over 10 students’ learning styles and backgrounds, resulting in a 100% pass rate for programming assessments and courses in Python, Java, and Scratch.</li>
         </ul>
       </div>
     </div>
