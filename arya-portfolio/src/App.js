@@ -8,6 +8,8 @@ import EmailIcon from './images/emailIcon.png'
 import RedArrow1 from './images/redArrow1.png'
 import slackImage from './images/slackImage.jpg'
 import SwipeToSlide from "./Carousel";
+import Arrow2 from './images/Arrow2.png'
+import Arrow3 from './images/Arrow3.png'
 function App() {
   return (
     <div className="App">
@@ -55,7 +57,7 @@ function App() {
 
   <section class="experience-block" >
     <h1 class="section-header E">Experience</h1>
-
+    <img src={Arrow2} alt="LOVED client work" className="Arrow2" />
     <div class="experience-item">
       <i class="fas fa-project-diagram"></i>
       <div>

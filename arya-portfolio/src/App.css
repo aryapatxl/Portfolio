@@ -159,7 +159,7 @@ body {
 
 .red-arrow {
   margin-top: -15px;
-  width: calc(90px + 2vmin) !important;
+  width: calc(100px + 2vmin) !important;
   padding-left: calc(110px + 2vmin);
 
 }
@@ -173,6 +173,14 @@ body {
 
 .project-images legend {
   width: calc(100px + 2vmin)
+}
+
+.Arrow2 {
+  width: calc(100px + 2vmin) !important;
+  padding-left: 5%;
+  margin-bottom: -7%;
+  margin-top: -10%;
+  
 }
 /* Phone dimensions */
 @media (max-width: 450px) {
@@ -204,6 +212,12 @@ body {
     width: calc(60px + 2vmin) !important;
     padding-left: calc(90px + 2vmin);
   
+  }
+
+  .Arrow2 {
+    margin-top: -10%;
+    margin-bottom: -10%;
+    width: calc(60px + 2vmin) !important;
   }
   .project-images {
     width: calc(120px + 2vmin)
