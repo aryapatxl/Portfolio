@@ -1,4 +1,4 @@
-import "./global.css";
+
 import './App.css';
 import "@fontsource/black-han-sans"
 import githubLogo from './images/githubLogo.png'

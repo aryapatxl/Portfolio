@@ -8,12 +8,13 @@ import epikImage from './images/epikImage.png';
 import './MyCarousel.css';
 import spotifyImage from './images/spotifyImage.png';
 import CalcImage from "./images/CalcImage.png"
+import { Link } from 'react-router-dom';
 
 function SwipeToSlide() {
     const settings = {
       className: "center",
       infinite: true,
-      centerPadding: "10px",
+      centerPadding: "20px",
       slidesToShow: 4,
       swipeToSlide: true,
     };
@@ -21,11 +22,17 @@ function SwipeToSlide() {
       <div className="slider-container">
         <Slider {...settings}>
           <div>
-            <img src={slackImage} className="carousel-image" />
+            <Link to="/SlackBot">
+              <img src={slackImage} className="carousel-image" alt="Slack" />
+            </Link>
           </div>
+
           <div>
-            <img src={warrantsImage} className="carousel-image" />
+            <Link to="/Warrants">
+            <img src={warrantsImage} className="carousel-image" alt="warrantsImage" />
+            </Link>
           </div>
+
           <div>
             <img src={epikImage} className="carousel-image" />
           </div>

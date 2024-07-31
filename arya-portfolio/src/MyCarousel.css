@@ -3,10 +3,10 @@
 .slider-container {
     width: 100%; /* Adjust the width as needed */
     margin: 0 auto; /* Center the carousel */
-    margin-left: 1.5%;
+    margin-left: 10.2%;
 }
 
 .carousel-image {
     width: 90%;
-    border-radius: 5 px; /* Optional: add rounded corners */
+    border-radius: 10 px; /* Optional: add rounded corners */
 }
