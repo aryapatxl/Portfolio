@@ -109,7 +109,7 @@ function App() {
         <h2>Computer Science Instructor, Juni Learning</h2>
         <p>June 2022 - May 2023</p>
         <ul>
-          <li>	Authored customized lesson plans by adapting to over 10 students’ learning styles and backgrounds, resulting in a 100% pass rate for programming assessments and courses in Python, Java, and Scratch.</li>
+          <li>Authored customized lesson plans by adapting to over 10 students’ learning styles and backgrounds, resulting in a 100% pass rate for programming assessments and courses in Python, Java, and Scratch.</li>
         </ul>
       </div>
     </div>
