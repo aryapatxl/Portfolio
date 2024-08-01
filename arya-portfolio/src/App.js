@@ -10,6 +10,7 @@ import slackImage from './images/slackImage.jpg'
 import SwipeToSlide from "./Carousel";
 import Arrow2 from './images/Arrow2.png'
 import Arrow3 from './images/Arrow3.png'
+import Resume from './images/resumeImg.png'
 function App() {
   return (
     <div className="App">
@@ -28,6 +29,9 @@ function App() {
           </a>
           <a href="https://aryapatelx.wordpress.com/" target="_blank" rel="github">
             <img src={CameraIcon} alt="Camera Logo" className=" image-button camera-button" />
+          </a>
+          <a href="https://drive.google.com/file/d/11rGFSBYmQ9QIdU3kord16V7Alt9NE6Z0/view?usp=sharing" target="_blank" rel="github">
+            <img src={Resume} alt="Resume Link" className=" image-button camera-button" />
           </a>
         </div>
         <img src={RedArrow1} alt="Red Arrow" className="red-arrow" />
