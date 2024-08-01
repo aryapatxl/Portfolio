@@ -21,11 +21,19 @@
     margin-left: 10%;
 }
 
+.a {
+    color: #FFF;
+  }
+  a:hover {
+     color: rgb(6, 6, 6)
+  }
 /* Phone dimensions */
 @media (max-width: 450px) {
     .project-block {
-        margin-top: -75%;
+        margin-top: -60%;
+        margin-right: 5%;
     }
+
   }
   
   
