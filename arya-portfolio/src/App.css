@@ -118,11 +118,20 @@ h2 {
   width: calc(15px + 2vmin) !important;
 }
 
+.resume-button {
+  margin-top: -10px;
+  margin-left: -13%;
+  width: calc(14px + 2vmin) !important;
+}
+
 .email-button{
   margin-bottom: 2.1px;
   width: calc(8.3px + 2vmin)
 }
 
+.l-button {
+  margin-left: 6%;
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -160,7 +169,7 @@ body {
 .red-arrow {
   margin-top: -15px;
   width: calc(100px + 2vmin) !important;
-  padding-left: calc(110px + 2vmin);
+  padding-left: calc(100px + 2vmin);
 
 }
 .about-block {

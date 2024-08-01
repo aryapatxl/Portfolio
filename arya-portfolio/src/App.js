@@ -25,13 +25,13 @@ function App() {
             <img src={EmailIcon} alt="Email Logo" className=" image-button email-button" />
           </a>
           <a href="https://www.linkedin.com/in/aryapatel-/" target="_blank" rel="github">
-            <img src={LinkedinLogo} alt="GitHub Logo" className="image-button" />
+            <img src={LinkedinLogo} alt="GitHub Logo" className="image-button l-button" />
           </a>
           <a href="https://aryapatelx.wordpress.com/" target="_blank" rel="github">
             <img src={CameraIcon} alt="Camera Logo" className=" image-button camera-button" />
           </a>
           <a href="https://drive.google.com/file/d/11rGFSBYmQ9QIdU3kord16V7Alt9NE6Z0/view?usp=sharing" target="_blank" rel="github">
-            <img src={Resume} alt="Resume Link" className=" image-button camera-button" />
+            <img src={Resume} alt="Resume Link" className=" image-button resume-button" />
           </a>
         </div>
         <img src={RedArrow1} alt="Red Arrow" className="red-arrow" />
