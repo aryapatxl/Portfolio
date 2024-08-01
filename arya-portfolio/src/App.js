@@ -6,7 +6,7 @@ import LinkedinLogo from './images/LinkedinLogo.png'
 import CameraIcon from './images/CameraIcon.png'
 import EmailIcon from './images/emailIcon.png'
 import RedArrow1 from './images/redArrow1.png'
-import slackImage from './images/slackImage.jpg'
+import AryaText from './images/Arya-rans.png'
 import SwipeToSlide from "./Carousel";
 import Arrow2 from './images/Arrow2.png'
 import Arrow3 from './images/Arrow3.png'
@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       <header className="App-header" role="banner">
-        <h1>Arya Patel</h1>
+        <img src={AryaText} alt="Arya Patel" className="arya-header" />
         <div className="button-container">
           <a href="https://github.com/aryapatxl" target="_blank" rel="github">
             <img src={githubLogo} alt="GitHub Logo" className="image-button" />

@@ -2,12 +2,11 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import slackImage from './images/slackImage.jpg';
-import warrantsImage from './images/warrantsImage.png';
-import epikImage from './images/epikImage.png';
+import slackImage from './images/slackimage.jpeg';
+import warrantsImage from './images/warrantsImage.jpeg';
+import epikImage from './images/epikImage.jpeg';
 import './MyCarousel.css';
-import spotifyImage from './images/spotifyImage.png';
-import CalcImage from "./images/CalcImage.png"
+import CalcImage from "./images/Calcimage.jpeg"
 import { Link } from 'react-router-dom';
 
 function SwipeToSlide() {

@@ -89,7 +89,7 @@ h2 {
   text-align: left;
   max-width: 60%;
   margin-left: 10%;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 #header {
   font-size: 40vw; /* Scalable font size */
@@ -108,6 +108,11 @@ h2 {
   gap: 15px; /* Adjust the gap between buttons as needed */
 }
 
+.arya-header {
+  align-items: left;
+  margin-left: -2%;
+  max-width: 50%;
+}
 
 .image-button:hover {
   transform: scale(1.1);
@@ -173,7 +178,7 @@ body {
 
 }
 .about-block {
-  margin-top: -10%;
+  margin-top: -5%;
 }
 
 .experience-block {
@@ -238,7 +243,11 @@ body {
     width: calc(60px + 2vmin) !important;
   }
   .project-images {
-    width: calc(120px + 2vmin)
+    width: calc(120px + 2vmin);
+  }
+  .arya-header {
+    margin-top: -5%;
+    max-width: 60%;
   }
 }
 
