@@ -11,6 +11,19 @@ import SwipeToSlide from "./Carousel";
 import Arrow2 from './images/Arrow2.png'
 import Arrow3 from './images/Arrow3.png'
 import Resume from './images/resumeImg.png'
+function loadScript() {
+  const script = document.createElement('script');
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-T7NGPZ3VJD';
+  script.async = true;
+  document.head.appendChild(script);
+
+  script.onload = () => {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-T7NGPZ3VJD');
+  };
+}
 function App() {
   return (
     <div className="App">
@@ -157,8 +170,7 @@ function App() {
     </div>
   </section>
 </body>
-        
-        
+  
       </main>
     </div>
   );
