@@ -4,10 +4,12 @@ import App from './App';
 import SlackPage from './pages/SlackPage';
 import WarrantsPage from './pages/WarrantsPage';
 import EpikPage from './pages/EPIKpage';
+import ReactGA from 'react-ga4';
 
 import CalcPage from './pages/CalcPage';
 
 function RouterComponent() {
+    ReactGA.initialize('G-T7NGPZ3VJD');
     return (
         <Router>
             <Routes>
