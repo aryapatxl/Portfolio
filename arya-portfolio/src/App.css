@@ -208,7 +208,7 @@ body {
 /* Phone dimensions */
 @media (max-width: 450px) {
   .App-header{
-    margin-top: 20%;
+    margin-top: 17%;
   }
 
   .experience-item {
