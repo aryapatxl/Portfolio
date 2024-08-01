@@ -43,11 +43,7 @@ function CalcPage() {
                     <img src={CalcImage} class="Video"></img>
                 </div>    
             </section>
-            <section>
-                <div style={{marginLeft: "10.1%"}} class="experience-item">
-                    <p style={{ color: '#373a44' }} > Note: This project was developed for an external stakeholder for exclusive use. As a result, the code is stored in a private GitHub repository, and the project link is not publicly accessible.</p>
-                </div>    
-            </section>
+
         </section>
 
       </main>
