@@ -106,7 +106,7 @@ h2 {
   align-items: left;
   position: relative;
   gap: 15px; /* Adjust the gap between buttons as needed */
-  filter: drop-shadow(1px 1px 1px #c9c8c6)
+  filter: drop-shadow(.5px .5px .5px #c9c8c6)
 }
 
 .arya-header {
