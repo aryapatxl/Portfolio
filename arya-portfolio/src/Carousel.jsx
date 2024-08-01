@@ -27,11 +27,7 @@ function SwipeToSlide() {
             </Link>
           </div>
 
-          <div>
-            <Link to="/Warrants">
-            <img src={warrantsImage} className="carousel-image" alt="warrantsImage" />
-            </Link>
-          </div>
+          
 
           <div>
             <Link to="/AIConversationCatalyst">
@@ -42,6 +38,12 @@ function SwipeToSlide() {
           <div>
             <Link to="/FinancialCalculatorAPI">
             <img src={CalcImage} className="carousel-image" />
+            </Link>
+          </div>
+
+          <div>
+            <Link to="/Warrants">
+            <img src={warrantsImage} className="carousel-image" alt="warrantsImage" />
             </Link>
           </div>
         </Slider>

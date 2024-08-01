@@ -100,6 +100,7 @@ function App() {
           <li>Spearheaded the implementation of Python-based data processing techniques, resulting in a remarkable 55% increase in processing efficiency. Employed advanced data cleaning, filtering, aggregation, and merging methods to handle large volumes of raw data effectively. Developed over 30 interactive data visualizations related to environmental and social justice using Flourish, enabling stakeholders to gain valuable insights and make data-driven decisions.</li>
         </ul>
       </div>
+      <img src={Arrow3} alt="First Internship" className="Arrow3" />
     </div>
 
     <div class="experience-item">

@@ -182,6 +182,12 @@ body {
   margin-top: -10%;
   
 }
+
+.Arrow3 {
+  width: calc(100px + 2vmin) !important;
+  margin-top:3%;
+  margin-left: 3%;
+}
 /* Phone dimensions */
 @media (max-width: 450px) {
   .App-header{
@@ -212,6 +218,9 @@ body {
     width: calc(60px + 2vmin) !important;
     padding-left: calc(90px + 2vmin);
   
+  }
+  .Arrow3 {
+    width: calc(60px + 2vmin) !important;
   }
 
   .Arrow2 {
