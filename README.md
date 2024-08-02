@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This is my developer portfolio website! It contains an overview of my professional experience, details into the projects I have done, and insights into my skills. The site also features my resume, relavent links and dives into some of my personal interests.
+This is my developer portfolio website! It contains an overview of my professional experience, details into the projects I have done, and insights into my skills. The site also features my resume, relavant links and dives into some of my personal interests.
 
 [View Live Website](https://aryapatel-portfolio.netlify.app)
 
