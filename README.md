@@ -1,8 +1,8 @@
 # Portfolio Website
 
-Welcome to the repository for my portfolio website! This project is built using React and showcases my work and skills.
+This is my developer portfolio website! It contains an overview of my professional experience, details into the projects I have done, and insights into my skills. The site also features my resume, relavent links and dives into some of my personal interests.
 
-[View Live Website]([https://your-portfolio-website.netlify.app](https://aryapatel-portfolio.netlify.app))
+[View Live Website]([https://aryapatel-portfolio.netlify.app])
 
 ## Details
 
@@ -11,7 +11,7 @@ Welcome to the repository for my portfolio website! This project is built using 
 - **Google Analytics**: Integrated to track and analyze visitor interactions.
 - **Carousel Component**: Implemented with `react-slick`.
 - **Styling**: HTML and CSS for clean and effective design.
-- **Design Inspiration**: The design is inspired by Nick McMillan's portfolio website.
+- **Design Inspiration**: Layout is inspired by Nick McMillan's portfolio website.
 
 ## Deployment
 
