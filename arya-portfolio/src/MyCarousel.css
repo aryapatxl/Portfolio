@@ -11,3 +11,8 @@
     border-radius: 10 px; /* Optional: add rounded corners */
     filter: drop-shadow(1px 3px 3px #c9c8c6)
 }
+
+.carousel-image:hover {
+    opacity: .8;
+    
+}
