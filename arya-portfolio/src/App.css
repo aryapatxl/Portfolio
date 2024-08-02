@@ -209,6 +209,7 @@ body {
 @media (max-width: 450px) {
   .App-header{
     margin-top: 17%;
+    margin-bottom: 20px;
   }
 
   .experience-item {
@@ -221,7 +222,8 @@ body {
   } 
 
   .about-block {
-    margin-top: -55%;
+    margin-top: -40%;
+    top: -70px;
   }
 
   .section-header {
