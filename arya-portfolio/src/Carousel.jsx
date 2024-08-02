@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import slackImage from './images/slackimage.jpeg';
 import warrantsImage from './images/warrantsImage.jpeg';
 import epikImage from './images/epikImage.jpeg';
+import kitchenImage from './images/kitchenGuru.jpeg'
 import './MyCarousel.css';
 import CalcImage from "./images/Calcimage.jpeg"
 import { Link } from 'react-router-dom';
@@ -25,8 +26,7 @@ function SwipeToSlide() {
               <img src={slackImage} className="carousel-image" alt="Slack" />
             </Link>
           </div>
-
-          
+        
 
           <div>
             <Link to="/AIConversationCatalyst">
@@ -45,7 +45,15 @@ function SwipeToSlide() {
             <img src={warrantsImage} className="carousel-image" alt="warrantsImage" />
             </Link>
           </div>
+
+          <div>
+            <Link to="/KitchenGuru">
+            <img src={kitchenImage} className="carousel-image" />
+            </Link>
+          </div>
         </Slider>
+
+        
 
       </div>
     );
