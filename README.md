@@ -17,4 +17,4 @@ This is my developer portfolio website! It contains an overview of my profession
 
 This application is deployed through Netlify with continuous integration.
 
-![Portfolio Screenshot]([https://github.com/yourusername/your-repo/blob/main/assets/screenshot.png](https://github.com/aryapatxl/Portfolio/blob/main/WebsiteSS.png))
+<img width="1511" alt="WebsiteSS" src="https://github.com/user-attachments/assets/c0e98067-7817-44ec-bc63-9b4f0f8e297b">
