@@ -37,7 +37,7 @@ function WarrantsPage() {
             </section>
 
             <section class="Demo-block">
-                <a color='#f1eee9' href="https://github.com/aryapatxl/Warrants-Text-Summerizer-" target="_blank" rel="github">
+                <a class="custom-link"href="https://github.com/aryapatxl/Warrants-Text-Summerizer-" target="_blank" rel="github">
                 <h1 class="section-header">GitHub Link</h1>  
                 </a>
             </section>

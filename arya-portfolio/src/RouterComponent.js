@@ -14,11 +14,11 @@ function RouterComponent() {
         <Router>
             <Routes>
                 <Route path="/" element={<App />} />
-                <Route path="/SlackBot" element={<SlackPage />} />
-                <Route path="/Warrants" element={<WarrantsPage />} />
-                <Route path="/AIConversationCatalyst" element={<EpikPage />} />
                 <Route path="/KitchenGuru" element={<KitchenPage />} />
+                <Route path="/SlackBot" element={<SlackPage />} />
+                <Route path="/AIConversationCatalyst" element={<EpikPage />} />
                 <Route path="/FinancialCalculatorAPI" element={<CalcPage />} />
+                <Route path="/Warrants" element={<WarrantsPage />} />
             </Routes>
         </Router>
     );

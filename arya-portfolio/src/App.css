@@ -85,7 +85,7 @@ h2 {
   align-items: flex-start;
   justify-content: left;
   font-size: calc(2px + 2vmin);
-  font-weight: 900;
+  font-weight: 500;
   text-align: left;
   max-width: 60%;
   margin-left: 10%;
@@ -256,3 +256,18 @@ body {
   }
 }
 
+.custom-link {
+  color: #f1eee9; /* Normal link color */
+}
+
+.custom-link:visited {
+  color: #8e887c; /* Color after link has been clicked */
+}
+
+.custom-link:hover {
+  color: #ded8ce; /* Color when hovering over the link */
+}
+
+.custom-link:active {
+  color: #f1eee9; /* Color when the link is being clicked */
+}
