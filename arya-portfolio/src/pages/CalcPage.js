@@ -5,10 +5,10 @@ import CalcImage from "../images/CalcAPI.png"
 
 function CalcPage() {
   return (
-    <div style={{ backgroundColor: '#F3915A', minHeight: '100vh', overflow: 'hidden',color: '#373a44' }} >
+    <div style={{ minHeight: '100vh', overflow: 'hidden'}} >
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-      <header className="App-header Proj-App-header" style={{backgroundColor: "#F3915A"}} role="banner">
-        <h1 style={{ color: '#373a44' }}>
+      <header className="App-header Proj-App-header"  role="banner">
+        <h1>
             Financial Calculator API
         </h1>
       </header>

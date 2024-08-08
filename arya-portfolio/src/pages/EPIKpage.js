@@ -5,10 +5,10 @@ import EPIKvid from "../videos/EPIKVideo.MOV"
 
 function EpikPage() {
   return (
-    <div style={{ backgroundColor: '#F4C578', minHeight: '100vh', overflow: 'hidden',color: '#373a44' }} >
+    <div style={{  minHeight: '100vh', overflow: 'hidden'}} >
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-      <header className="App-header Proj-App-header" style={{backgroundColor: "#F4C578"}} role="banner">
-        <h1 style={{ color: '#373a44' }}>
+      <header className="App-header Proj-App-header"  role="banner">
+        <h1>
             AI Conversation Catalyst
         </h1>
       </header>
@@ -16,7 +16,7 @@ function EpikPage() {
         <section class="experience-block project-block">
             <div>
                 <section class="about-block">
-                    <h1 style={{ color: '#373a44' }} class="section-header">About</h1>
+                    <h1  class="section-header">About</h1>
                     <div style={{marginLeft: "10.1%"}} class="experience-item">
                         <ul>
                             <li style={{ color: '#373a44' }}>The EPIK Project is a non-profit organization dedicated to combating human trafficking in the US by reducing sexual exploitation. EPIK tackles this problem by deploying fake advertisements to attract potential perpetrators, then their volunteers engage in “therapeutic” conversations with the perpetrators. These conversations are critical for dissuading individuals from committing sexual exploitation, however the <b>problem</b> is that they can often be difficult to navigate and emotionally draining. Our team developed a <b>solution</b>: a conversation analysis tool designed to assist volunteers in managing these conversations effectively, thereby enhancing their ability to prevent human trafficking.</li>
