@@ -39,7 +39,7 @@ function App() {
 
       </header>
       <main>
-      <body>
+
     
       <section class="about-block">
     <h1 class="section-header">About</h1>
@@ -47,7 +47,7 @@ function App() {
     <div class="experience-item">
       <i class="fas fa-code"></i>
       <div>
-        <p> Hi! I'm Arya. I am an aspiring engineer, aspiring author and photographer.   </p>
+        <p> Hi! I'm Arya. I am an aspiring professional with diverse experience in software engineering, project management and data science.    </p>
         <ul>
           <li></li>
         </ul>
@@ -63,7 +63,8 @@ function App() {
   <section class="experience-block" >
     <h1 class="section-header E">Experience</h1>
     <img src={Arrow2} alt="LOVED client work" className="Arrow2" />
-    <div class="experience-item">
+    <a href="https://www.bu.edu/spark/" target="_blank" class="experience-link">
+    <div class="experience-item block-link">
       <i class="fas fa-project-diagram"></i>
       <div>
         <h2>Project Manager, Boston University, Spark!</h2>
@@ -73,30 +74,35 @@ function App() {
         </ul>
       </div>
     </div>
+    </a>
 
-    <div class="experience-item">
-      <i class="fas fa-code"></i>
-      <div>
-        <h2>Software Engineering Intern, Glocal</h2>
-        <p>Sep 2023 - Jan 2024</p>
-        <ul>
-          <li>Developed and implemented debugging strategies to build out features in mobile and web applications using React and React Native. Improved overall app functionality, reliability, and enhanced UI/UX design.</li>
-        </ul>
+  <a href="https://www.glocal.io" target="_blank"class="experience-link">
+  <div class="experience-item first-exp">
+        <i class="fas fa-code"></i>
+        <div>
+          <h2>Software Engineering Intern, Glocal</h2>
+          <p>Sep 2023 - Jan 2024</p>
+          <ul>
+            <li>Developed and implemented debugging strategies to build out features in mobile and web applications using React and React Native. Improved overall app functionality, reliability, and enhanced UI/UX design.</li>
+          </ul>
+        </div>
       </div>
-    </div>
-
-    <div class="experience-item">
-      <i class="fas fa-laptop-code"></i>
-      <div>
-        <h2>Software Engineering Intern, Reliance Inc.</h2>
-        <p>Jun 2023 - Sep 2023</p>
-        <ul>
-          <li class="peak">Devised creative solutions to debug and develop the company's Web API's, E-commerce store, and perform unit testing, contributing to the overall functionality and performance of the systems. Collaborated with a skilled development team, engaging in daily meetings to assess project progress, identify areas for improvement, and ensure efficient delivery of high-quality software solutions.</li>
-        </ul>
+      </a>
+  <a href="https://reliance.com/" target="_blank"class="experience-link">
+    <div class="experience-item block-link">
+        <i class="fas fa-laptop-code"></i>
+        <div>
+          <h2>Software Engineering Intern, Reliance Inc.</h2>
+          <p>Jun 2023 - Sep 2023</p>
+          <ul>
+            <li class="peak">Devised creative solutions to debug and develop the company's Web API's, E-commerce store, and perform unit testing, contributing to the overall functionality and performance of the systems. Collaborated with a skilled development team, engaging in daily meetings to assess project progress, identify areas for improvement, and ensure efficient delivery of high-quality software solutions.</li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </a>
 
-    <div class="experience-item">
+    <a href="https://visualizingenergy.org" target="_blank"class="experience-link">
+    <div class="experience-item block-link">
       <i class="fas fa-database"></i>
       <div>
         <h2>Data Analyst Intern, Institute for Global Sustainability</h2>
@@ -107,19 +113,22 @@ function App() {
       </div>
       <img src={Arrow3} alt="First Internship" className="Arrow3" />
     </div>
+    </a>
 
-    <div class="experience-item">
-      <i class="fas fa-project-diagram"></i>
-      <div>
-        <h2>Computer Science Instructor, Juni Learning</h2>
-        <p>June 2022 - May 2023</p>
-        <ul>
-          <li>Authored customized lesson plans by adapting to over 10 students’ learning styles and backgrounds, resulting in a 100% pass rate for programming assessments and courses in Python, Java, and Scratch.</li>
-        </ul>
-      </div>
+    <a href="https://junilearning.com/" target="_blank"class="experience-link">
+  <div class="experience-item block-link">
+    <i class="fas fa-project-diagram"></i>
+    <div>
+      <h2>Computer Science Instructor, Juni Learning</h2>
+      <p>June 2022 - May 2023</p>
+      <ul>
+        <li>Authored customized lesson plans by adapting to over 10 students’ learning styles and backgrounds, resulting in a 100% pass rate for programming assessments and courses in Python, Java, and Scratch.</li>
+      </ul>
     </div>
-
-    <div class="experience-item">
+  </div>
+  </a>
+  <a href="https://www.bu.edu/questrom/?utm_source=google&utm_medium=cpc&utm_campaign=bgquestrom&utm_content=questrom&utm_term=questrom-brand-terms&gad_source=1&gbraid=0AAAAAD3g9v-xFH9mCVLr-vqUkIXYHmC01&gclid=Cj0KCQjwiOy1BhDCARIsADGvQnBbEZRnQzQ8gQYRHyBojMtAsro2SabhJj9Et8p0yH30GUgVvBs1XkkaApgPEALw_wcB" target="_blank"class="experience-link">
+    <div class="experience-item block-link">
       <i class="fas fa-search"></i>
       <div>
         <h2>Research Assistant, Questrom School of Business</h2>
@@ -130,12 +139,13 @@ function App() {
         </ul>
       </div>
     </div>
+    </a>
   </section>
 
   <section>
     <h1 class="section-header FellowSpace">Fellowships</h1>
 
-    <div class="experience-item">
+    <div class="experience-item block-link">
       <i class="fas fa-code"></i>
       <div>
         <h2>Software Engineering Fellowship, Headstarter AI</h2>
@@ -146,7 +156,7 @@ function App() {
       </div>
     </div>
 
-    <div class="experience-item">
+    <div class="experience-item block-link">
       <i class="fas fa-code"></i>
       <div>
         <h2>Product Managemenet Fellowship, SurbhiLately PM Fellowship </h2>
@@ -157,7 +167,46 @@ function App() {
       </div>
     </div>
   </section>
-</body>
+
+
+  <section>
+    <h1 class="section-header FellowSpace">Other</h1>
+
+    <div class="experience-item">
+      <i class="fas fa-code"></i>
+      <div>
+        <h2>Freelance Photographer</h2>
+        <ul>
+          <li>Started a graduation photography business, using social media to advertise.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h1 class="section-header FellowSpace">Education</h1>
+
+    <div class="experience-item">
+      <i class="fas fa-code"></i>
+      <div>
+        <h2>Bachelors of Arts in Computer Science, Boston University</h2>
+
+        <ul>
+          <li>Minored in Business Administration & Management</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience-item">
+      <i class="fas fa-code"></i>
+      <div>
+        <h2>High School Diploma & IB Diploma, Sunny Hills High School </h2>
+
+
+      </div>
+    </div>
+  </section>
+
   
       </main>
     </div>

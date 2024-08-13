@@ -31,6 +31,7 @@ body {
   font-size: calc(1px + 1vmin); /* Adjust font size as needed */
   font-weight: 400;
   margin: 20px 0;
+
   text-align: center;
 
 }
@@ -155,6 +156,7 @@ body {
   font-weight: bold;
   text-align: left;
   max-width: 60%;
+
   margin-left: 10.2%;
   
 }
@@ -168,6 +170,7 @@ body {
 
 .experience-item ul li {
   margin-bottom: 5px;
+
 }
 
 .FellowSpace  {
@@ -185,7 +188,7 @@ body {
 }
 
 .experience-block {
-  margin-top: 5%
+  margin-top: 10%
 }
 
 .project-images legend {
@@ -271,3 +274,20 @@ body {
 .custom-link:active {
   color: #373a44; /* Color when the link is being clicked */
 }
+
+.experience-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.block-link {
+  border: 0px solid transparent; /* Initial transparent border */
+  transition: background-color .3s,  box-shadow 0.3s;/* Smooth transition for background and border color */
+
+}
+
+.block-link:hover {
+  background-color: #d4c6bd41; /* Background color on hover */
+  box-shadow: 0 0 10px rgba(221, 212, 206, 0.7);
+}
+
