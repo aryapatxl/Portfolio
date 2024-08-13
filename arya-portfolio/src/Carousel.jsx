@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 function SwipeToSlide() {
     const settings = {
       className: "center",
-      infinite: true,
+      infinite: false,
       centerPadding: "20px",
       slidesToShow: 4,
       swipeToSlide: true,
