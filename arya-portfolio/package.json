@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "env-cmd": "^10.1.0",
     "react": "^18.3.1",
     "react-chatbot-kit": "^2.2.2",
     "react-dom": "^18.3.1",
@@ -19,6 +20,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "start:staging": "env-cmd -f .env.staging react-scripts start",
     "start": "CI=false react-scripts start",
     "build": "CI=false react-scripts build",
     "test": "CI=false react-scripts test",

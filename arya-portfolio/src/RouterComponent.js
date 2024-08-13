@@ -9,7 +9,8 @@ import KitchenPage from "./pages/KitchenPage"
 import CalcPage from './pages/CalcPage';
 
 function RouterComponent() {
-    ReactGA.initialize(REACT_APP_GA_TRACKING_ID);
+    ReactGA.initialize(`${process.env.REACT_APP_GA_TRACKING_ID}`);
+
     return (
         <Router>
             <Routes>
