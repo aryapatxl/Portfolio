@@ -51,7 +51,7 @@ function App() {
 
     
       <section class="about-block">
-    <h1 class="section-header">About</h1>
+    <h1 class="about-header section-header">About</h1>
 
     <div class="experience-item">
       <i class="fas fa-code"></i>
@@ -67,7 +67,7 @@ function App() {
   </section>
 
   <section class="projects-block">
-  <h1 class="section-header">Projects</h1>
+  <h1 class="section-header proj-header">Projects</h1>
     <SwipeToSlide/>
   </section>
 

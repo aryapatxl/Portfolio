@@ -23,14 +23,28 @@ body {
   src: url(https://cdn.jsdelivr.net/fontsource/fonts/black-han-sans@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/black-han-sans@latest/latin-400-normal.woff) format('woff');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+.proj-header  {
+  margin-bottom: 2% !important;
+}
 
-.section-header {
+.about-header {
+  margin-bottom: 2% !important;
+}
+
+
+.section-header  {
   font-family: 'Black Han Sans', sans-serif;
   font-size: calc(1px + 1vmin); /* Adjust font size as needed */
   font-weight: 400;
   margin: 20px 0;
-
+  display: flex;
+  font-size: calc(3px + 2vmin);
+  font-weight: bold;
+  text-align: left;
+  max-width: 60%;
+  margin-left: 10.2%;
   text-align: center;
+  margin-bottom: -1.5%;
 
 }
 
@@ -153,16 +167,6 @@ body {
   margin-left: 8%;
 }
 
-.section-header {
-  display: flex;
-  font-size: calc(3px + 2vmin);
-  font-weight: bold;
-  text-align: left;
-  max-width: 60%;
-
-  margin-left: 10.2%;
-  
-}
 
 .experience-item ul {
   list-style: none;
@@ -232,11 +236,6 @@ body {
     top: -70px;
   }
 
-  .section-header {
-    margin-left: 9.2%; /* No margin on the left */
-    margin-right: 0%; /* No margin on the right */
-
-  }
 
   .red-arrow {
     margin-top: -2px;
