@@ -19,7 +19,7 @@ function ChatBotPage() {
                     <h1  class="section-header">About</h1>
                     <div style={{marginLeft: "10.1%"}} class="experience-item">
                         <ul>
-                            <li> Students often face challenges in mastering data structures and algorithms. As part of a personal project, I developed a chatbot designed to assist learners by providing clear and concise explanations of various data structures and algorithms. The <b>solution</b> is a chatbot that engages users in interactive conversations, answering their questions and offering detailed explanations. This tool aims to enhance understanding and support students in their learning journey by delivering accurate information and guidance on complex topics.
+                            <li> Students often face challenges in mastering data structures and algorithms. As part of a personal project, I developed a chatbot designed to assist learners by providing clear and concise explanations of various data structures and algorithms. The <b>solution</b> is a chatbot that engages users in interactive conversations, answering their questions and offering detailed explanations. This tool aims to enhance understanding and support students in their learning journey by delivering accurate information and guidance on complex topics *UI changes still occuring*.
                             </li>
                         </ul>
                     </div>    
