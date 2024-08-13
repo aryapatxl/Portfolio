@@ -44,8 +44,9 @@ body {
   max-width: 60%;
   margin-left: 10.2%;
   text-align: center;
-  margin-bottom: -1%;
-
+}
+.head {
+  margin-bottom: -1% !important;
 }
 
 .experience-item {

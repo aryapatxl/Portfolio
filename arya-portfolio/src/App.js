@@ -67,12 +67,12 @@ function App() {
   </section>
 
   <section class="projects-block">
-  <h1 class="section-header proj-header">Projects</h1>
+  <h1 class="section-header proj-header ">Projects</h1>
     <SwipeToSlide/>
   </section>
 
   <section class="experience-block">
-  <h1 class="section-header E">Experience</h1>
+  <h1 class="section-header E head">Experience</h1>
   <img src={Arrow2} alt="LOVED client work" className="Arrow2" />
 
   <div class="experience-item">
@@ -174,7 +174,7 @@ function App() {
 </section>
 
 <section>
-  <h1 class="section-header FellowSpace">Fellowships</h1>
+  <h1 class="section-header head FellowSpace">Fellowships</h1>
 
   <div class="experience-item">
     <i class="fas fa-code"></i>
@@ -211,7 +211,7 @@ function App() {
 </section>
 
 <section>
-  <h1 class="section-header FellowSpace">Other</h1>
+  <h1 class="section-header head FellowSpace">Other</h1>
 
   <div class="experience-item">
     <i class="fas fa-code"></i>
@@ -231,7 +231,7 @@ function App() {
 </section>
 
   <section>
-    <h1 class="section-header FellowSpace">Education</h1>
+    <h1 class="section-header head FellowSpace">Education</h1>
 
     <div class="experience-item">
       <i class="fas fa-code"></i>
