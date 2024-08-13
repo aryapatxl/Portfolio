@@ -7,6 +7,7 @@ import EpikPage from './pages/EPIKpage';
 import ReactGA from 'react-ga4';
 import KitchenPage from "./pages/KitchenPage"
 import CalcPage from './pages/CalcPage';
+import DSAChatBot from './pages/DSAChatBot'
 
 function RouterComponent() {
     ReactGA.initialize(`${process.env.REACT_APP_GA_TRACKING_ID}`);
@@ -18,8 +19,10 @@ function RouterComponent() {
                 <Route path="/KitchenGuru" element={<KitchenPage />} />
                 <Route path="/SlackBot" element={<SlackPage />} />
                 <Route path="/AIConversationCatalyst" element={<EpikPage />} />
-                <Route path="/FinancialCalculatorAPI" element={<CalcPage />} />
+                <Route path="/DSA-ChatBot" element={<DSAChatBot />} />
                 <Route path="/Warrants" element={<WarrantsPage />} />
+                <Route path="/FinancialCalculatorAPI" element={<CalcPage />} />
+
             </Routes>
         </Router>
     );

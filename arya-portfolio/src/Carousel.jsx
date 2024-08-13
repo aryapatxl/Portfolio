@@ -8,6 +8,7 @@ import epikImage from './images/epikImage.jpeg';
 import kitchenImage from './images/kitchenGuru.jpeg'
 import './MyCarousel.css';
 import CalcImage from "./images/Calcimage.jpeg"
+import ChatBotImage from "./images/ChatBotImage.jpeg"
 import { Link } from 'react-router-dom';
 
 function SwipeToSlide() {
@@ -21,6 +22,11 @@ function SwipeToSlide() {
     return (
       <div className="slider-container">
         <Slider {...settings}>
+        <div>
+            <Link to="/KitchenGuru">
+            <img src={kitchenImage} className="carousel-image" />
+            </Link>
+          </div>
           <div>
             <Link to="/SlackBot">
               <img src={slackImage} className="carousel-image" alt="Slack" />
@@ -31,6 +37,12 @@ function SwipeToSlide() {
           <div>
             <Link to="/AIConversationCatalyst">
             <img src={epikImage} className="carousel-image" />
+            </Link>
+          </div>
+
+          <div>
+            <Link to="/DSA-ChatBot">
+            <img src={ChatBotImage} className="carousel-image" />
             </Link>
           </div>
 
@@ -46,11 +58,9 @@ function SwipeToSlide() {
             </Link>
           </div>
 
-          <div>
-            <Link to="/KitchenGuru">
-            <img src={kitchenImage} className="carousel-image" />
-            </Link>
-          </div>
+          
+
+          
         </Slider>
 
         
