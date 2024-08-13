@@ -12,9 +12,7 @@ body {
   padding: 0;
 }
 
-.button-container {
-  filter: invert(19%) sepia(22%) saturate(376%) hue-rotate(189deg) brightness(95%) contrast(88%);
-}
+
 
 /* black-han-sans-latin-400-normal */
 @font-face {
@@ -44,6 +42,7 @@ body {
   text-align: left;
   max-width: 60%;
   margin-left: 9%;
+  margin-right: 30%;
   font-size: calc(10px + 2vmin);
   font-weight: bold;
 
@@ -72,6 +71,7 @@ h2 {
 .App {
   text-align: center;
   background-color:  #ebe4df;
+  margin-left: 9%;
 }
 
 .App-logo {
@@ -98,6 +98,9 @@ h2 {
 .image-button {
   width: calc(10px + 2vmin); /* Adjust the width to make the button smaller */
   margin-top: -10px;
+  filter: invert(20%) sepia(15%) saturate(9%) hue-rotate(33deg) brightness(99%) contrast(101%);
+
+
 }
 
 .button-container {
@@ -113,7 +116,7 @@ h2 {
 .arya-header {
   align-items: left;
   margin-left: -2%;
-  max-width: 50%;
+  max-width: 40%;
   filter: drop-shadow(1px 1px 2px #c9c8c6)
 }
 
@@ -197,8 +200,8 @@ body {
 
 .Arrow2 {
   width: calc(100px + 2vmin) !important;
-  padding-left: 5%;
-  margin-bottom: -7%;
+  padding-left: -5%;
+  margin-bottom: -6%;
   margin-top: -10%;
   
 }
@@ -221,7 +224,7 @@ body {
     text-align: left;
     max-width: 100%;
     margin-left: 4%;
-    margin-right: 5%; 
+    margin-right: 2%; 
   } 
 
   .about-block {
@@ -257,6 +260,10 @@ body {
     margin-top: -5%;
     max-width: 60%;
   }
+  .App {
+
+    margin-left: 0;
+  }
 }
 
 .custom-link {
@@ -291,3 +298,43 @@ body {
   box-shadow: 0 0 10px rgba(221, 212, 206, 0.7);
 }
 
+.exp-button {
+  width: calc(10px + 2vmin);
+  margin-top: 50%;
+  filter: invert(20%) sepia(15%) saturate(9%) hue-rotate(33deg) brightness(99%) contrast(101%);
+}
+
+.rel-button {
+  filter: none !important;
+}
+.exp-button:hover{
+  transform: scale(1.1);
+}
+.exp-margin-b{
+  margin-left: 3%;
+}
+
+
+.experience-title {
+  position: relative; /* Keep the title as the relative parent */
+  display: inline-block; /* Ensure the title and date are treated as an inline-block */
+  margin-bottom: 0; /* Remove bottom margin if any */
+}
+
+.exp-dates {
+  opacity: 0; /* Initially hide the date */
+  display: inline-block; /* Keep the date inline with the title */
+  margin-left: 10px; /* Space between title and date */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  margin-top: 0; /* Remove top margin to align better */
+}
+
+.experience-title:hover .exp-dates {
+  opacity: 1; /* Reveal the date on hover */
+}
+.head-button {
+  max-width:calc(8px + 2vmin) ;
+}
+.cam-button {
+  margin-bottom: 10%;
+}
