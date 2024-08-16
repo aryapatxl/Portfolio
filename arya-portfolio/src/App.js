@@ -40,7 +40,7 @@ function App() {
           <a href="https://aryapatelx.wordpress.com/" target="_blank" rel="github">
             <img src={CameraIcon} alt="Camera Logo" className=" image-button camera-button" />
           </a>
-          <a href="https://drive.google.com/file/d/1m1NiLyWXfueXzq9XAljRn7hIit5ykiia/view?usp=share_link" target="_blank" rel="github">
+          <a href="https://drive.google.com/file/d/1THy3eWfh77Z_D0cZRWmmeyhCWU1bX0U6/view?usp=share_link" target="_blank" rel="github">
             <img src={Resume} alt="Resume Link" className=" image-button resume-button" />
           </a>
         </div>
