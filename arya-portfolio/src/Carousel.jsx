@@ -5,27 +5,37 @@ import "slick-carousel/slick/slick-theme.css";
 import slackImage from './images/slackimage.jpeg';
 import warrantsImage from './images/warrantsImage.jpeg';
 import epikImage from './images/epikImage.jpeg';
-import kitchenImage from './images/kitchenGuru.jpeg'
+import kitchenImage from './images/kitchenGuru.jpeg';
+import CalcImage from "./images/Calcimage.jpeg";
+import ChatBotImage from "./images/ChatBotImage.jpeg";
 import './MyCarousel.css';
-import CalcImage from "./images/Calcimage.jpeg"
-import ChatBotImage from "./images/ChatBotImage.jpeg"
 import { Link } from 'react-router-dom';
 
 function SwipeToSlide() {
-    const settings = {
-      className: "center",
-      infinite: false,
-      centerPadding: "20px",
-      slidesToShow: 4,
-      swipeToSlide: true,
-      draggable: true
-    };
-    return (
+  const settings = {
+    className: "center",
+    infinite: false,
+    centerPadding: "20px",
+    slidesToShow: 4,
+    swipeToSlide: true,
+    draggable: true
+  };
+
+  return (
+    <>
+      <head>
+        <link rel="preload" href={slackImage} as="image" />
+        <link rel="preload" href={warrantsImage} as="image" />
+        <link rel="preload" href={epikImage} as="image" />
+        <link rel="preload" href={kitchenImage} as="image" />
+        <link rel="preload" href={CalcImage} as="image" />
+        <link rel="preload" href={ChatBotImage} as="image" />
+      </head>
       <div className="slider-container">
         <Slider {...settings}>
-        <div>
+          <div>
             <Link to="/KitchenGuru">
-            <img src={kitchenImage} className="carousel-image" />
+              <img src={kitchenImage} className="carousel-image" />
             </Link>
           </div>
           <div>
@@ -33,41 +43,30 @@ function SwipeToSlide() {
               <img src={slackImage} className="carousel-image" alt="Slack" />
             </Link>
           </div>
-        
-
           <div>
             <Link to="/AIConversationCatalyst">
-            <img src={epikImage} className="carousel-image" />
+              <img src={epikImage} className="carousel-image" />
             </Link>
           </div>
-
           <div>
             <Link to="/DSA-ChatBot">
-            <img src={ChatBotImage} className="carousel-image" />
+              <img src={ChatBotImage} className="carousel-image" />
             </Link>
           </div>
-
           <div>
             <Link to="/FinancialCalculatorAPI">
-            <img src={CalcImage} className="carousel-image" />
+              <img src={CalcImage} className="carousel-image" />
             </Link>
           </div>
-
           <div>
             <Link to="/Warrants">
-            <img src={warrantsImage} className="carousel-image" alt="warrantsImage" />
+              <img src={warrantsImage} className="carousel-image" alt="warrantsImage" />
             </Link>
           </div>
-
-          
-
-          
         </Slider>
-
-        
-
       </div>
-    );
-  }
-  
-  export default SwipeToSlide;
+    </>
+  );
+}
+
+export default SwipeToSlide;
