@@ -6,11 +6,11 @@ This is my developer portfolio website! It contains an overview of my profession
 
 ## Details
 
-- **React Application**: Developed with React for a dynamic and responsive user experience.
+- **React Application**: Developed with `react.js` for a dynamic and responsive user experience.
 - **Multi-Page**: Includes multiple pages to present various projects.
 - **Google Analytics**: Integrated to track and analyze visitor interactions.
 - **Carousel Component**: Implemented with `react-slick`. Images are preloaded to improve performance.
-- **Styling**: HTML and CSS for clean and effective design.
+- **Styling**: `HTML` and `CSS` for clean and effective design.
 - **Design Inspiration**: Inspired by Nick McMillan's portfolio website.
 
 ## Deployment
