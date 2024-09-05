@@ -1,7 +1,8 @@
 import React from 'react';
 import './projects.css';
 import '../App.css'
-import KitchenGuru from "../videos/KitchenGuru.mov"
+import DSAvid from "../videos/DSA-bot-demo.mov"
+
 
 function ChatBotPage() {
   return (
@@ -43,7 +44,15 @@ function ChatBotPage() {
             <a class="custom-link" href="https://dsa-chat-bot.vercel.app" target="_blank" rel="github">
                 <h1 class="section-header">Project Link</h1>  
                 </a>
-                <h1 class="section-header">Demo Video Coming Soon</h1>
+
+                <h1 class="section-header">Demo Video</h1>
+                <div>
+                    <video class="Video" controls>
+                    <source src={DSAvid} type="video/mp4" />
+                    Your browser does not support the video tag.
+                    </video>
+                </div>    
+
                
 
             </section>
