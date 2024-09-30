@@ -1,7 +1,7 @@
 import React from 'react';
 import './projects.css';
 import '../App.css'
-import DSAvid from "../videos/DSA-bot-demo.mov"
+import DSAvid from "../videos/DSA-bot-dem.mov"
 
 
 function ChatBotPage() {
