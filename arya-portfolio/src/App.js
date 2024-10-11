@@ -58,7 +58,7 @@ function App() {
       
       <div>
         
-        <p> Hi! I'm Arya. I am an aspiring professional with diverse experience in software engineering, project management and data science.    </p>
+        <p> Hi! I'm Arya. I am an aspiring professional with diverse experience in software engineering and project management.    </p>
         <ul>
           <li></li>
         </ul>
