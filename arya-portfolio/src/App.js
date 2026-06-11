@@ -1,260 +1,289 @@
-
 import './App.css';
-import "@fontsource/black-han-sans"
-import githubLogo from './images/githubLogo.png'
-import LinkedinLogo from './images/LinkedinLogo.png'
-import CameraIcon from './images/CameraIcon.png'
-import EmailIcon from './images/emailIcon.png'
-import RedArrow1 from './images/redArrow1.png'
-import AryaText from './images/Arya-rans.png'
-import SwipeToSlide from "./Carousel";
-import Arrow2 from './images/Arrow2.png'
-import Arrow3 from './images/Arrow3.png'
-import Resume from './images/resumeImg.png'
-import sparkIcon from './images/spark.png'
-import pinIcon from './images/pin.png'
-import relIcon from'./images/reli.png'
-import enerIcon from'./images/energy.png'
-import junIcon from './images/juni.png'
-import resIcon from './images/res.png'
-import cursorIcon from './images/cursor.png'
-import prodIcon from './images/prod.png'
-import camera2 from './images/camera.png'
+import '@fontsource/black-han-sans';
+import '@fontsource/playfair-display/400.css';
+import '@fontsource/playfair-display/400-italic.css';
+import '@fontsource/playfair-display/700.css';
+import '@fontsource/playfair-display/900.css';
+import '@fontsource/lora/400.css';
+import '@fontsource/lora/400-italic.css';
+import '@fontsource/lora/700.css';
+import '@fontsource/pt-serif/400.css';
+import '@fontsource/pt-serif/400-italic.css';
+import '@fontsource/pt-serif/700.css';
+import { motion } from 'framer-motion';
+import Masthead from './Masthead';
+import FrontPage from './FrontPage';
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+};
+
+function NewsItem({ kicker, headline, deck, dateline, byline, body, accent }) {
+  return (
+    <motion.article
+      className="news-item"
+      variants={fadeInUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+    >
+      <div className="news-kicker-row">
+        <span className="news-kicker">{kicker}</span>
+        {accent && <span className="news-accent">{accent}</span>}
+      </div>
+      <h3 className="news-headline">{headline}</h3>
+      {deck && <p className="news-deck">{deck}</p>}
+      <p className="news-byline">
+        By <strong>Arya Patel</strong>
+        {byline && <span className="news-byline-role"> · {byline}</span>}
+        {dateline && <span className="news-dateline"> — {dateline}</span>}
+      </p>
+      <p className="news-body">{body}</p>
+    </motion.article>
+  );
+}
+
+function SectionHeader({ id, label, children }) {
+  return (
+    <div id={id} className="paper-section-head">
+      <div className="paper-section-rule" />
+      <h2 className="paper-section-label">{label}</h2>
+      <div className="paper-section-rule" />
+      {children && <p className="paper-section-deck">{children}</p>}
+    </div>
+  );
+}
+
+const skills = {
+  Languages: ['Python', 'JavaScript', 'TypeScript', 'Java', 'SQL'],
+  Frameworks: ['React', 'Angular', 'Next.js', 'Node.js', 'Express', 'TanStack', 'React Native', 'Firebase'],
+  'AI & Data': ['GPT-4', 'GROQ', 'Claude', 'RAG', 'NLP', 'Prompt Engineering', 'Hugging Face', 'Flourish'],
+  Infrastructure: ['AWS', 'Docker', 'Kubernetes', 'OpenShift', 'CI/CD', 'Vercel', 'PostHog'],
+  Practice: ['Git', 'Conductor', 'REST APIs', 'Agile', 'Figma', 'User Research'],
+};
 
 function App() {
   return (
-    <div className="App">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-      <header className="App-header" role="banner">
-        <img src={AryaText} alt="Arya Patel" className="arya-header" />
-        <div className="button-container">
-          <a href="https://github.com/aryapatxl" target="_blank" rel="github">
-            <img src={githubLogo} alt="GitHub Logo" className="image-button" />
-          </a>
-          <a href="mailto:aryaxrp@gmail.com" target="_blank" rel="github">
-            <img src={EmailIcon} alt="Email Logo" className=" image-button email-button" />
-          </a>
-          <a href="https://www.linkedin.com/in/aryapatel-/" target="_blank" rel="github">
-            <img src={LinkedinLogo} alt="GitHub Logo" className="image-button l-button" />
-          </a>
-          <a href="https://aryapatelx.wordpress.com/" target="_blank" rel="github">
-            <img src={CameraIcon} alt="Camera Logo" className=" image-button camera-button" />
-          </a>
-          <a href="https://drive.google.com/file/d/1THy3eWfh77Z_D0cZRWmmeyhCWU1bX0U6/view?usp=share_link" target="_blank" rel="github">
-            <img src={Resume} alt="Resume Link" className=" image-button resume-button" />
-          </a>
-        </div>
-        <img src={RedArrow1} alt="Red Arrow" className="red-arrow" />
+    <div className="newsprint">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      </header>
-      <main>
+      <Masthead />
 
-    
-      <section class="about-block">
-    <h1 class="about-header section-header">About</h1>
+      <main className="paper">
+        {/* ─── EDITOR'S DESK ─────────────────────────────────── */}
+        <section id="desk" className="paper-section">
+          <SectionHeader label="From the Editor's Desk" />
+          <motion.article
+            className="desk"
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <div className="desk-kicker">A NOTE FROM THE EDITOR</div>
+            <h2 className="desk-headline">A reporter who learned to write to the machine.</h2>
+            <p className="desk-byline">
+              By <strong>Arya Patel</strong> · <span>Editor-in-Chief, Software Engineer</span>
+            </p>
+            <div className="desk-body">
+              <p>
+                <span className="desk-dropcap">I</span> grew up convinced I'd be a journalist. I loved the lede — that
+                first sentence whose only job is to make you keep reading — and I loved that a good story could change
+                what someone did on Monday morning. Then I found code, and discovered the lede was still the job: write
+                the first line so the rest writes itself.
+              </p>
+              <p>
+                These days I ship software at <strong>Barclays</strong> on a regulatory data platform called Lighthouse,
+                and I'm a founding engineer at <strong>Chaos</strong>, a dating app live on the App Store. I work across
+                the stack, spend a lot of time near AI, and care a lot about how interfaces feel — the way a story cares
+                about how it reads aloud.
+              </p>
+              <p className="desk-signoff">
+                Welcome to the Patel Times. Today's front page is below.
+              </p>
+            </div>
+          </motion.article>
+        </section>
 
-    <div class="experience-item">
-      <i class="fas fa-code"></i>
-      
-      <div>
-        
-        <p> Hi! I'm Arya. I am an aspiring professional with diverse experience in software engineering and project management.    </p>
-        <ul>
-          <li></li>
-        </ul>
-      </div>
-    </div>
-  </section>
+        {/* ─── FEATURES ──────────────────────────────────────── */}
+        <section id="features" className="paper-section">
+          <SectionHeader label="Features">click a story to read it in full</SectionHeader>
+          <FrontPage />
+        </section>
 
-  <section class="projects-block">
-  <h1 class="section-header proj-header ">Projects</h1>
-    <SwipeToSlide/>
-  </section>
+        {/* ─── CAREER BEAT ───────────────────────────────────── */}
+        <section id="beat" className="paper-section">
+          <SectionHeader label="Career Beat">Filed dispatches from where I've worked.</SectionHeader>
+          <div className="news-grid">
+            <NewsItem
+              kicker="Now Reporting · Banking"
+              headline="Arya Patel ships 50+ features on regulatory platform at Barclays."
+              deck="Lighthouse goes from view-only tool to full-stack platform; first production CI/CD pipeline on BCP2 lands without a runbook."
+              dateline="London"
+              byline="Software Engineer · Feb 2025 – Present"
+              accent="NEW"
+              body="At Barclays, Patel has scaled Lighthouse — an internal regulatory data platform — from UI to full-stack, owning data display, add/edit and drafting using component-based architecture. She independently navigated OpenShift, Docker and Kubernetes to get the team's first production CI/CD pipeline on Barclays' internal BCP2 platform shipped from scratch. She also contributed to AskRex, an internal compliance chatbot backed by an AWS-hosted LLM retrieval pipeline, engineering prompts and shaping how data surfaces to users. On the side: Python scripts to clean post-trade data, and direct MS SQL queries to manage regulatory records."
+            />
+            <NewsItem
+              kicker="Startup Desk · Consumer"
+              headline="Founding engineer at dating app Chaos owns notifications from zero to production."
+              deck="Live on the App Store, 6,000 downloads, and the AI agents are booking the dates now."
+              dateline="Remote"
+              byline="Founding Engineer · Jan 2025 – Present"
+              accent="STARTUP"
+              body="At Chaos, Patel engineered the notifications system end-to-end — defining use cases, designing the data model, and building delivery infrastructure from zero to production on a live App Store dating app with 6,000 downloads. She created AI agents on Browserbase to automate date reservations, collapsing a multi-step flow into one optimized interaction, and ships full-stack features and fixes across the codebase as a part-time team member. Impact extends beyond engineering: end-to-end audits that informed PostHog instrumentation, user testing sessions that translated into shipped features, and contributions to MVP scoping, marketing ideation and product direction."
+            />
+            <NewsItem
+              kicker="Project Desk · Civic Data"
+              headline="Spark! PM keeps 9 teams on the rails across NBC, The Grio and City of Boston."
+              deck="Agile delivery, weekly client syncs, leadership presentations — Trello kept the trains running on time."
+              dateline="Boston"
+              byline="Project Manager · Sep 2023 – May 2024"
+              body="Patel established Agile delivery across three client organizations — NBC, The Grio and the City of Boston — managing 9 cross-functional teams simultaneously and running sprint planning on Trello to keep data science projects on track from kickoff to delivery. She ran weekly client syncs, facilitated technical alignment between engineering and stakeholders, presented progress to leadership, and resolved blockers tailored to each client's unique needs."
+            />
+            <NewsItem
+              kicker="Engineering Desk · E-commerce"
+              headline="Reliance intern ships standalone Financial Calculator API while juggling live storefront."
+              deck="20+ resolved issues, 10+ REST endpoints, and a healthier page-load story by the end of summer."
+              dateline="Cypress, CA"
+              byline="Software Engineering Intern · Jun 2023 – Sep 2023"
+              body="At Reliance Inc., Patel resolved 20+ issues across an unfamiliar codebase and tech stack, created a Financial Calculator API with 10+ REST endpoints, and shipped it as a standalone service while integrating separate features into a live e-commerce platform. She optimized page-load performance through targeted bug fixes — building hands-on debugging skills with browser developer tools along the way."
+            />
+            <NewsItem
+              kicker="Data Desk · Climate"
+              headline="IGS intern turns climate datasets into 30+ public-facing visualizations."
+              deck="Statistical analysis in Python supports an equitable energy transition; Flourish does the rest."
+              dateline="Boston"
+              byline="Data Science Intern · Mar 2023 – May 2023"
+              body="At the Institute for Global Sustainability, Patel applied advanced statistical analysis across large datasets in Python to uncover insights supporting an equitable energy transition. She built 30+ interactive Flourish visualizations for public-facing data stories that directly supported published research."
+            />
+            <NewsItem
+              kicker="Education Desk"
+              headline="Juni Learning instructor posts 100% pass rate across Python, Java and Scratch students."
+              deck="Custom lesson plans for 10+ students, each adapted to their own learning style."
+              dateline="Remote"
+              byline="Computer Science Instructor · Jun 2022 – May 2023"
+              body="Patel authored customized lesson plans by adapting to over 10 students' learning styles and backgrounds, resulting in a 100% pass rate for programming assessments and courses in Python, Java and Scratch."
+            />
+            <NewsItem
+              kicker="Research Desk · NLP"
+              headline="Questrom research assistant tunes NLP algorithm with PhD lead, tags 7,000+ lines."
+              deck="Performance and speed wins on the algorithm; high-quality training datasets for downstream ML."
+              dateline="Boston"
+              byline="Research Assistant · Jun 2022 – Dec 2022"
+              body="Patel collaborated closely with a PhD student to optimize an NLP algorithm, delivering meaningful performance and speed improvements. She conducted extensive research and data tagging of 7,000+ lines of content from top companies, contributing to high-quality training datasets for ML applications."
+            />
+          </div>
+        </section>
 
-  <section class="experience-block">
-  <h1 class="section-header E head">Experience</h1>
-  <img src={Arrow2} alt="LOVED client work" className="Arrow2" />
+        {/* ─── FELLOWSHIPS ───────────────────────────────────── */}
+        <section className="paper-section">
+          <SectionHeader label="Fellowships & Programs" />
+          <div className="news-grid news-grid-two">
+            <NewsItem
+              kicker="Fellowship · AI Engineering"
+              headline="Headstarter AI fellowship: weekly AI builds, agentic workflows, fast iteration."
+              dateline="Remote · 2024"
+              byline="Software Engineering Fellow"
+              body="Built and shipped AI-driven full-stack projects on a weekly cadence with a cohort of engineers — emphasis on prompt engineering, agentic workflows, and rapid iteration."
+            />
+            <NewsItem
+              kicker="Fellowship · Product"
+              headline="SurbhiLately PM fellowship: case studies on market dynamics, user needs."
+              dateline="Remote · 2022"
+              byline="PM Fellow"
+              body="Applied practical PM skills to conduct in-depth case studies of market dynamics and user needs, and developed strategies to address complex business challenges."
+            />
+          </div>
+        </section>
 
-  <div class="experience-item">
-    <i class="fas fa-project-diagram"></i>
-    <a href="https://www.bu.edu/spark/" target="_blank" class="experience-link">
-      <img src={sparkIcon} alt="Spark" className="exp-button" />
-    </a>
-    <div className="exp-margin-b">
-      <h2 class="experience-title">
-        Project Manager, Boston University, Spark!
-        <p class="exp-dates">Sep 2023 - May 2024</p>
-      </h2>
-      <ul>
-        <li>Managed data science projects for NBC, The Grio & The City of Boston. Facilitated client interactions and chaired meetings, ensuring clear communication and alignment on project goals. Guided teams using Agile methodologies to develop and execute a strategic roadmap for technical projects.</li>
-      </ul>
-    </div>
-  </div>
+        {/* ─── CLASSIFIEDS (SKILLS) ──────────────────────────── */}
+        <section id="classifieds" className="paper-section">
+          <SectionHeader label="Classifieds">Available for hire, debate and good coffee.</SectionHeader>
+          <motion.div
+            className="classifieds"
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            {Object.entries(skills).map(([group, items]) => (
+              <div key={group} className="classifieds-ad">
+                <div className="classifieds-ad-head">{group}</div>
+                <p className="classifieds-ad-body">{items.join(' · ')}</p>
+              </div>
+            ))}
+            <div className="classifieds-ad classifieds-ad-hire">
+              <div className="classifieds-ad-head">Wanted</div>
+              <p className="classifieds-ad-body">
+                Curious engineers, generous reviewers, and anyone shipping something that has to feel right. Reach out
+                at <strong>aryaxrp@gmail.com</strong>.
+              </p>
+            </div>
+          </motion.div>
+        </section>
 
-  <div class="experience-item first-exp">
-    <i class="fas fa-code"></i>
-    <a href="https://www.glocal.io" target="_blank" class="experience-link">
-      <img src={pinIcon} alt="Pin" className="exp-button" />
-    </a>
-    <div className="exp-margin-b">
-      <h2 class="experience-title">
-        Software Engineering Intern, Glocal
-        <p class="exp-dates">Sep 2023 - Jan 2024</p>
-      </h2>
-      <ul>
-        <li>Developed and implemented debugging strategies to build out features in mobile and web applications using React and React Native. Improved overall app functionality, reliability, and enhanced UI/UX design.</li>
-      </ul>
-    </div>
-  </div>
+        {/* ─── THE RECORD ────────────────────────────────────── */}
+        <section id="record" className="paper-section">
+          <SectionHeader label="The Record">Where the formal stuff lives.</SectionHeader>
+          <div className="record">
+            <motion.div
+              className="record-entry"
+              variants={fadeInUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <span className="record-label">Education</span>
+              <h3>Bachelor of Arts in Computer Science, Boston University</h3>
+              <p>Minor in Business Administration &amp; Management · Dean's List</p>
+            </motion.div>
+            <motion.div
+              className="record-entry"
+              variants={fadeInUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <span className="record-label">Secondary</span>
+              <h3>IB Diploma · Sunny Hills High School</h3>
+            </motion.div>
+            <motion.div
+              className="record-entry"
+              variants={fadeInUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <span className="record-label">Arts &amp; Style</span>
+              <h3>Freelance Photographer (2024)</h3>
+              <p>
+                Started a graduation photography business, growing it through social media.{' '}
+                <a
+                  href="https://aryapatelx.wordpress.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="record-link"
+                >
+                  See the portfolio →
+                </a>
+              </p>
+            </motion.div>
+          </div>
+        </section>
 
-  <div class="experience-item">
-    <i class="fas fa-laptop-code"></i>
-    <a href="https://reliance.com/" target="_blank" class="experience-link">
-      <img src={relIcon} alt="Pin" className="rel-button exp-button" />
-    </a>
-    <div className="exp-margin-b">
-      <h2 class="experience-title">
-        Software Engineering Intern, Reliance Inc.
-        <p class="exp-dates">Jun 2023 - Sep 2023</p>
-      </h2>
-      <ul>
-        <li class="peak">Devised creative solutions to debug and develop the company's Web API's, E-commerce store, and perform unit testing, contributing to the overall functionality and performance of the systems. Collaborated with a skilled development team, engaging in daily meetings to assess project progress, identify areas for improvement, and ensure efficient delivery of high-quality software solutions.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="experience-item">
-    <i class="fas fa-database"></i>
-    <a href="https://visualizingenergy.org" target="_blank" class="experience-link">
-      <img src={enerIcon} alt="Pin" className="exp-button" />
-    </a>
-    <div className="exp-margin-b">
-      <h2 class="experience-title">
-        Data Analyst Intern, Institute for Global Sustainability
-        <p class="exp-dates">Mar 2023 - May 2023</p>
-      </h2>
-      <ul>
-        <li>Spearheaded the implementation of Python-based data processing techniques, resulting in a remarkable 55% increase in processing efficiency. Employed advanced data cleaning, filtering, aggregation, and merging methods to handle large volumes of raw data effectively. Developed over 30 interactive data visualizations related to environmental and social justice using Flourish, enabling stakeholders to gain valuable insights and make data-driven decisions.</li>
-      </ul>
-    </div>
-    <img src={Arrow3} alt="First Internship" className="Arrow3" />
-  </div>
-
-  <div class="experience-item">
-    <i class="fas fa-project-diagram"></i>
-    <a href="https://junilearning.com/" target="_blank" class="experience-link">
-      <img src={junIcon} alt="Pin" className=" exp-button" />
-    </a>
-    <div className="exp-margin-b">
-      <h2 class="experience-title">
-        Computer Science Instructor, Juni Learning
-        <p class="exp-dates">June 2022 - May 2023</p>
-      </h2>
-      <ul>
-        <li>Authored customized lesson plans by adapting to over 10 students’ learning styles and backgrounds, resulting in a 100% pass rate for programming assessments and courses in Python, Java, and Scratch.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="experience-item">
-    <i class="fas fa-search"></i>
-    <a href="https://www.bu.edu/questrom/?utm_source=google&utm_medium=cpc&utm_campaign=bgquestrom&utm_content=questrom&utm_term=questrom-brand-terms&gad_source=1&gbraid=0AAAAAD3g9v-xFH9mCVLr-vqUkIXYHmC01&gclid=Cj0KCQjwiOy1BhDCARIsADGvQnBbEZRnQzQ8gQYRHyBojMtAsro2SabhJj9Et8p0yH30GUgVvBs1XkkaApgPEALw_wcB" target="_blank" class="experience-link">
-      <img src={resIcon} alt="Pin" className="exp-button" />
-    </a>
-    <div className="exp-margin-b">
-      <h2 class="experience-title">
-        Research Assistant, Questrom School of Business
-        <p class="exp-dates">Jun 2022 - Dec 2022</p>
-      </h2>
-      <ul>
-        <li>Collaborated closely with a Ph.D. student to optimize an NLP algorithm, resulting in significant performance and speed improvements. Leveraged analytical skills and attention to detail to fine-tune the algorithm. Conducted extensive research and data tagging of over 7000 lines of content from top companies, contributing to the development of high-quality training datasets for machine learning applications.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h1 class="section-header head FellowSpace">Fellowships</h1>
-
-  <div class="experience-item">
-    <i class="fas fa-code"></i>
-    <a href="https://headstarter.co" target="_blank" class="experience-link">
-      <img src={cursorIcon} alt="cursor" className="exp-button head-button" />
-    </a>
-    <div className="exp-margin-b">
-      
-      <h2 class="experience-title">
-        Software Engineering Fellowship, Headstarter AI
-        <p class="exp-dates">2024</p>
-      </h2>
-      <ul>
-        <li></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="experience-item">
-    <i class="fas fa-code"></i>
-    <a href="https://jemi.so/surbhilately" target="_blank" class="experience-link">
-      <img src={prodIcon} alt="cursor" className="exp-button" />
-    </a>
-    <div className="exp-margin-b">
-      <h2 class="experience-title">
-        Product Management Fellowship, SurbhiLately PM Fellowship
-        <p class="exp-dates">2022</p>
-      </h2>
-      <ul>
-        <li>Applied practical product management skills to conduct in-depth case studies, demonstrating a deep understanding of market dynamics and user needs. Developed innovative solutions and strategies to address complex business challenges effectively.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h1 class="section-header head FellowSpace">Other</h1>
-
-  <div class="experience-item">
-    <i class="fas fa-code"></i>
-    <a href="" target="_blank" class="experience-link">
-      <img src={camera2} alt="cursor" className="exp-button" />
-    </a>
-    <div className="exp-margin-b">
-      <h2 class="experience-title">
-        Freelance Photographer
-        <p class="exp-dates">2024</p>
-      </h2>
-      <ul>
-        <li>Started a graduation photography business, using social media to advertise.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-  <section>
-    <h1 class="section-header head FellowSpace">Education</h1>
-
-    <div class="experience-item">
-      <i class="fas fa-code"></i>
-      <div>
-        <h2>Bachelors of Arts in Computer Science, Boston University</h2>
-
-        <ul>
-          <li>Minored in Business Administration & Management</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="experience-item">
-      <i class="fas fa-code"></i>
-      <div>
-        <h2>High School Diploma & IB Diploma, Sunny Hills High School </h2>
-
-
-      </div>
-    </div>
-  </section>
-
-  
+        {/* ─── COLOPHON / FOOTER ─────────────────────────────── */}
+        <footer className="paper-colophon">
+          <div className="paper-colophon-rule" />
+          <p>
+            <strong>The Patel Times</strong> · Published from a single laptop, served with caffeine.
+          </p>
+          <p>
+            Set in <em>Playfair Display</em> and <em>PT Serif</em>. Edited and engineered by Arya Patel.{' '}
+            <span aria-hidden="true">— 30 —</span>
+          </p>
+        </footer>
       </main>
     </div>
   );

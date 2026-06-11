@@ -1,340 +1,427 @@
+/* ============================================================
+   The Patel Times — newspaper stylesheet
+   ============================================================ */
+
 :root {
-  --padding-start: 40px;
-  --padding-end: 10px;
-  --min-padding: 10px;
+  --ink: #14110f;
+  --ink-soft: #2e2620;
+  --ink-mute: #5b4d3d;
+  --rule: #14110f;
+  --paper: #f3ece0;
+  --paper-2: #ede4d3;
+  --accent: #a02633;
+  --accent-soft: #c8b89a;
 }
 
-body {
-  color: #373a44;
-  font-family: Arial, sans-serif;
-  background-color: #f1eee9;
-  margin: 0;
-  padding: 0;
-}
-
-
-
-/* black-han-sans-latin-400-normal */
 @font-face {
   font-family: 'Black Han Sans';
   font-style: normal;
   font-display: swap;
   font-weight: 400;
-  src: url(https://cdn.jsdelivr.net/fontsource/fonts/black-han-sans@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/black-han-sans@latest/latin-400-normal.woff) format('woff');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-.proj-header  {
-  margin-bottom: 2% !important;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/black-han-sans@latest/latin-400-normal.woff2) format('woff2');
 }
 
-.about-header {
-  margin-bottom: 2% !important;
+* {
+  box-sizing: border-box;
 }
 
-
-.section-header  {
-  font-family: 'Black Han Sans', sans-serif;
-  font-size: calc(1px + 1vmin); /* Adjust font size as needed */
-  font-weight: 400;
-  margin: 20px 0;
-  display: flex;
-  font-size: calc(3px + 2vmin);
-  font-weight: bold;
-  text-align: left;
-  max-width: 60%;
-  margin-left: 10.2%;
-  text-align: center;
-}
-.head {
-  margin-bottom: -1% !important;
-}
-
-.experience-item {
-  display: flex;
-  align-items: flex-start;
-  margin: 20px var(--padding-start);
-  transition: margin 0.3s ease;
-  text-align: left;
-  max-width: 60%;
-  margin-left: 9%;
-  margin-right: 30%;
-  font-size: calc(10px + 2vmin);
-  font-weight: bold;
-
-}
-
-.experience-item i {
-  font-size: 2em;
-  margin-right: 20px;
-}
-
-h2 {
-  font-family: 'Serif', sans-serif;
-  font-weight: 700; /* Ensure the weight matches the imported font */
-  font-size: calc(6px + 1vmin);
-}
-
-.experience-item p, 
-.experience-item li {
-  font-family: "Serif", sans-serif;
-  font-weight: 100;
-  font-size: calc(5px + 1vmin);
-  margin-top: -1%;
-}
-
-
-.App {
-  text-align: center;
-  background-color:  #ebe4df;
-  margin-left: 9%;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  font-family: 'Black Han Sans', sans-serif;
-  min-height: 40vh;
-  display: flex-start;
-  align-items: flex-start;
-  justify-content: left;
-  font-size: calc(2px + 2vmin);
-  font-weight: 500;
-  text-align: left;
-  max-width: 60%;
-  margin-left: 10%;
-  margin-top: 5%;
-}
-#header {
-  font-size: 40vw; /* Scalable font size */
-}
-.image-button {
-  width: calc(10px + 2vmin); /* Adjust the width to make the button smaller */
-  margin-top: -10px;
-  filter: invert(20%) sepia(15%) saturate(9%) hue-rotate(33deg) brightness(99%) contrast(101%);
-
-
-}
-
-.button-container {
-  margin-top: 1px; /* Adjust this to control space between header and buttons */
-  display: flex;
-  justify-content: left;
-  align-items: left;
-  position: relative;
-  gap: 15px; /* Adjust the gap between buttons as needed */
-  filter: drop-shadow(.5px .5px .5px #c9c8c6)
-}
-
-.arya-header {
-  align-items: left;
-  margin-left: -2%;
-  max-width: 40%;
-  filter: drop-shadow(1px 1px 2px #c9c8c6)
-}
-
-.image-button:hover {
-  transform: scale(1.1);
-}
-
-.camera-button {
-  margin-top: -11px;
-  width: calc(15px + 2vmin) !important;
-}
-
-.resume-button {
-  margin-top: -10px;
-  margin-left: -13%;
-  width: calc(14px + 2vmin) !important;
-}
-
-.email-button{
-  margin-bottom: 2.1px;
-  width: calc(8.3px + 2vmin)
-}
-
-.l-button {
-  margin-left: 6%;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #ebe4df;
-  color: #333;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'PT Serif', 'Times New Roman', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Newsprint texture — subtle SVG noise so the background feels like paper */
+.newsprint {
+  position: relative;
+  min-height: 100vh;
+  background: var(--paper);
+  background-image:
+    radial-gradient(circle at 12% 18%, rgba(160, 130, 100, 0.04) 0%, transparent 40%),
+    radial-gradient(circle at 88% 72%, rgba(160, 130, 100, 0.05) 0%, transparent 40%),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.08  0 0 0 0 0.06  0 0 0 0 0.05  0 0 0 0.06 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+.paper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px 60px;
+}
+
+/* ─── Section heads ──────────────────────────────────────── */
+.paper-section {
+  margin: 56px 0;
+}
+
+.paper-section-head {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.paper-section-rule {
+  height: 1px;
+  background: var(--ink);
+}
+
+.paper-section-label {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: clamp(20px, 2.2vw, 28px);
+  letter-spacing: 4px;
+  text-transform: uppercase;
   margin: 0;
-  padding: 0;
-  margin-left: 8%;
+  white-space: nowrap;
 }
 
+.paper-section-deck {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--ink-mute);
+  margin: 6px 0 0;
+}
 
-.experience-item ul {
-  list-style: none;
-  padding: 0;
+/* ─── Editor's Desk ──────────────────────────────────────── */
+.desk {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.desk-kicker {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent);
+  border-top: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
+  display: inline-block;
+  padding: 3px 10px;
+  margin-bottom: 14px;
+}
+
+.desk-headline {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: clamp(28px, 3.6vw, 46px);
+  line-height: 1.05;
+  margin: 0 0 12px;
+  letter-spacing: -0.5px;
+}
+
+.desk-byline {
+  font-size: 13px;
+  margin: 0 0 18px;
+  color: var(--ink);
+}
+
+.desk-byline span {
+  font-style: italic;
+  color: var(--ink-mute);
+}
+
+.desk-body {
+  column-count: 2;
+  column-gap: 32px;
+  column-rule: 1px solid var(--accent-soft);
+  font-size: 16px;
+  line-height: 1.65;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.desk-body p {
+  margin: 0 0 14px;
+}
+
+.desk-dropcap {
+  float: left;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 0.85;
+  padding: 4px 10px 0 0;
+  color: var(--ink);
+}
+
+.desk-signoff {
+  font-style: italic;
+  color: var(--ink-mute);
+}
+
+@media (max-width: 720px) {
+  .desk-body {
+    column-count: 1;
+  }
+}
+
+/* ─── Career Beat — news items ───────────────────────────── */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 0;
+}
+
+.news-grid-two {
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+
+.news-item {
+  padding: 22px 24px;
+  border-bottom: 1px solid var(--accent-soft);
+  position: relative;
+}
+
+.news-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 22px;
+  bottom: 22px;
+  width: 1px;
+  background: var(--accent-soft);
+}
+
+.news-grid .news-item:nth-child(2n)::after {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .news-item::after {
+    display: none !important;
+  }
+}
+
+.news-kicker-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+.news-kicker {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  border-top: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
+  padding: 2px 7px;
+}
+
+.news-accent {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 10px;
+  letter-spacing: 2px;
+  background: var(--accent);
+  color: var(--paper);
+  padding: 2px 7px;
+  transform: rotate(-2deg);
+  display: inline-block;
+}
+
+.news-headline {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: clamp(20px, 2.2vw, 26px);
+  line-height: 1.1;
+  margin: 0 0 8px;
+  letter-spacing: -0.3px;
+}
+
+.news-deck {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.35;
+  margin: 0 0 10px;
+  color: var(--ink-soft);
+}
+
+.news-byline {
+  font-size: 12px;
+  margin: 0 0 8px;
+  color: var(--ink);
+}
+
+.news-byline-role,
+.news-dateline {
+  font-style: italic;
+  color: var(--ink-mute);
+}
+
+.news-body {
+  font-size: 14px;
+  line-height: 1.6;
   margin: 0;
-  transition: width 1s ease, margin 1s ease;
+  text-align: justify;
+  hyphens: auto;
 }
 
-.experience-item ul li {
-  margin-bottom: 5px;
-
+/* ─── Classifieds ────────────────────────────────────────── */
+.classifieds {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  border-top: 4px double var(--ink);
+  border-bottom: 4px double var(--ink);
 }
 
-.FellowSpace  {
-  padding-top: calc(20px + 2vmin)
+.classifieds-ad {
+  padding: 18px 18px;
+  border-right: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
 }
 
-.red-arrow {
-  margin-top: -15px;
-  width: calc(100px + 2vmin) !important;
-  padding-left: calc(100px + 2vmin);
-
-}
-.about-block {
-  margin-top: -5%;
+.classifieds-ad:last-child {
+  border-bottom: none;
 }
 
-.experience-block {
-  margin-top: 10%
+.classifieds-ad-head {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed var(--ink);
 }
 
-.project-images legend {
-  width: calc(100px + 2vmin)
+.classifieds-ad-body {
+  font-family: 'PT Serif', serif;
+  font-size: 13px;
+  line-height: 1.45;
+  margin: 0;
+  color: var(--ink-soft);
 }
 
-.Arrow2 {
-  width: calc(100px + 2vmin) !important;
-  padding-left: -5%;
-  margin-bottom: -6%;
-  margin-top: -10%;
-  
+.classifieds-ad-hire {
+  background: var(--paper-2);
 }
 
-.Arrow3 {
-  width: calc(100px + 2vmin) !important;
-  margin-top:3%;
-  margin-left: 3%;
+.classifieds-ad-hire .classifieds-ad-head {
+  color: var(--accent);
 }
-/* Phone dimensions */
-@media (max-width: 450px) {
-  .App-header{
-    margin-top: 17%;
-    margin-bottom: 20px;
+
+/* Hide the right-side rule on the last column at each breakpoint */
+@media (min-width: 880px) {
+  .classifieds-ad:nth-child(3n) {
+    border-right: none;
   }
-
-  .experience-item {
-    display: flex;
-    align-items: flex;
-    text-align: left;
-    max-width: 100%;
-    margin-left: 4%;
-    margin-right: 2%; 
-  } 
-
-  .about-block {
-    margin-top: -40%;
-    top: -70px;
+}
+@media (max-width: 879px) and (min-width: 561px) {
+  .classifieds-ad:nth-child(2n) {
+    border-right: none;
   }
-
-
-  .red-arrow {
-    margin-top: -2px;
-    width: calc(60px + 2vmin) !important;
-    padding-left: calc(90px + 2vmin);
-  
-  }
-  .Arrow3 {
-    width: calc(60px + 2vmin) !important;
-  }
-
-  .Arrow2 {
-    margin-top: -10%;
-    margin-bottom: -10%;
-    width: calc(60px + 2vmin) !important;
-  }
-  .project-images {
-    width: calc(120px + 2vmin);
-  }
-  .arya-header {
-    margin-top: -5%;
-    max-width: 60%;
-  }
-  .App {
-
-    margin-left: 0;
+}
+@media (max-width: 560px) {
+  .classifieds-ad {
+    border-right: none;
   }
 }
 
-.custom-link {
-  color: #373a44; /* Normal link color */
+/* ─── The Record ─────────────────────────────────────────── */
+.record {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  border-top: 1px solid var(--ink);
+  padding-top: 22px;
 }
 
-.custom-link:visited {
-  color: #545969; /* Color after link has been clicked */
+.record-entry {
+  padding-right: 22px;
 }
 
-.custom-link:hover {
-  color: #000000; /* Color when hovering over the link */
+.record-label {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
 }
 
-.custom-link:active {
-  color: #373a44; /* Color when the link is being clicked */
+.record-entry h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.15;
+  margin: 0 0 6px;
 }
 
-.experience-link {
+.record-entry p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.record-link {
+  color: var(--accent);
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.record-link:hover {
+  background: var(--accent);
+  color: var(--paper);
   text-decoration: none;
-  color: inherit;
 }
 
-.block-link {
-  border: 0px solid transparent; /* Initial transparent border */
-  transition: background-color .3s,  box-shadow 0.3s;/* Smooth transition for background and border color */
-
+/* ─── Colophon ───────────────────────────────────────────── */
+.paper-colophon {
+  margin-top: 56px;
+  padding-top: 24px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 13px;
+  color: var(--ink-mute);
 }
 
-.block-link:hover {
-  background-color: #d4c6bd41; /* Background color on hover */
-  box-shadow: 0 0 10px rgba(221, 212, 206, 0.7);
+.paper-colophon-rule {
+  height: 4px;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  margin-bottom: 18px;
 }
 
-.exp-button {
-  width: calc(10px + 2vmin);
-  margin-top: 50%;
-  filter: invert(20%) sepia(15%) saturate(9%) hue-rotate(33deg) brightness(99%) contrast(101%);
+.paper-colophon p {
+  margin: 4px 0;
 }
 
-.rel-button {
-  filter: none !important;
-}
-.exp-button:hover{
-  transform: scale(1.1);
-}
-.exp-margin-b{
-  margin-left: 3%;
-}
-
-
-.experience-title {
-  position: relative; /* Keep the title as the relative parent */
-  display: inline-block; /* Ensure the title and date are treated as an inline-block */
-  margin-bottom: 0; /* Remove bottom margin if any */
-}
-
-.exp-dates {
-  opacity: 0; /* Initially hide the date */
-  display: inline-block; /* Keep the date inline with the title */
-  margin-left: 10px; /* Space between title and date */
-  transition: opacity 0.3s ease; /* Smooth transition */
-  margin-top: 0; /* Remove top margin to align better */
-}
-
-.experience-title:hover .exp-dates {
-  opacity: 1; /* Reveal the date on hover */
-}
-.head-button {
-  max-width:calc(8px + 2vmin) ;
-}
-.cam-button {
-  margin-bottom: 10%;
+/* ─── Reduced motion ─────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

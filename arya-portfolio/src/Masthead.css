@@ -1,0 +1,150 @@
+.masthead {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 24px 16px;
+  text-align: center;
+  color: #14110f;
+  font-family: 'PT Serif', 'Times New Roman', serif;
+}
+
+.masthead-topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: 'PT Serif', serif;
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: #2e2620;
+  padding: 0 6px 8px;
+}
+
+.masthead-topline-tagline {
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+.masthead-rule {
+  height: 1px;
+  background: #14110f;
+  margin: 6px 0;
+}
+
+.masthead-rule-double {
+  height: 5px;
+  background: transparent;
+  border-top: 1.5px solid #14110f;
+  border-bottom: 1.5px solid #14110f;
+  margin: 6px 0;
+}
+
+.masthead-title {
+  margin: 12px 0 6px;
+  line-height: 0.95;
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-weight: 900;
+}
+
+.masthead-the {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(20px, 2.2vw, 30px);
+  letter-spacing: 0.5px;
+  margin-bottom: -4px;
+}
+
+.masthead-name {
+  display: block;
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-weight: 900;
+  font-size: clamp(56px, 11vw, 132px);
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  line-height: 0.9;
+}
+
+.masthead-dateline {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 6px;
+  font-family: 'PT Serif', serif;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  color: #2e2620;
+  text-transform: uppercase;
+}
+
+.masthead-dateline-loc {
+  letter-spacing: 2px;
+}
+
+.masthead-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 10px 6px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.masthead-section {
+  color: #14110f;
+  text-decoration: none;
+  padding: 4px 12px;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.masthead-section:hover {
+  background: #14110f;
+  color: #f3ece0;
+}
+
+.masthead-bullet {
+  color: #a08a72;
+  font-size: 10px;
+}
+
+.masthead-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  padding: 12px 0 6px;
+}
+
+.masthead-contact img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  filter: invert(8%) sepia(7%) saturate(70%) hue-rotate(33deg) brightness(95%) contrast(95%);
+  transition: transform 0.15s ease;
+}
+
+.masthead-contact a:hover img {
+  transform: translateY(-2px) scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .masthead-topline,
+  .masthead-dateline {
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    text-align: center;
+  }
+  .masthead-topline-tagline,
+  .masthead-dateline-loc {
+    order: -1;
+  }
+  .masthead-name {
+    letter-spacing: -1px;
+  }
+}
