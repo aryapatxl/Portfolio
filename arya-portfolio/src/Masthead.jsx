@@ -39,7 +39,7 @@ function Masthead() {
 
       <div className="masthead-dateline">
         <span>{TODAY}</span>
-        <span className="masthead-dateline-loc">BOSTON · LONDON · ONLINE EDITION</span>
+        <span className="masthead-dateline-loc">LA · BOSTON · NYC · ONLINE EDITION</span>
         <span>Price: Free · Always</span>
       </div>
 
@@ -50,7 +50,7 @@ function Masthead() {
         <span className="masthead-bullet">•</span>
         <a href="#features" className="masthead-section">Features</a>
         <span className="masthead-bullet">•</span>
-        <a href="#beat" className="masthead-section">Career Beat</a>
+        <a href="#beat" className="masthead-section">Career</a>
         <span className="masthead-bullet">•</span>
         <a href="#classifieds" className="masthead-section">Classifieds</a>
         <span className="masthead-bullet">•</span>
@@ -73,7 +73,7 @@ function Masthead() {
           <img src={CameraIcon} alt="Photography" />
         </a>
         <a
-          href="https://drive.google.com/file/d/1THy3eWfh77Z_D0cZRWmmeyhCWU1bX0U6/view?usp=share_link"
+          href="https://drive.google.com/file/d/17eelamSML3Ztk4G8XKUtN1ASNP-TfwYg/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Resume"
