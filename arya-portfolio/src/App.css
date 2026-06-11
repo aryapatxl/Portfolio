@@ -278,6 +278,19 @@ body {
   hyphens: auto;
 }
 
+.news-body-link {
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  white-space: nowrap;
+}
+
+.news-body-link:hover {
+  color: var(--accent, #a02633);
+}
+
 /* ─── Classifieds ────────────────────────────────────────── */
 .classifieds {
   display: grid;
