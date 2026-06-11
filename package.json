@@ -1,6 +1,9 @@
 {
   "dependencies": {
     "@fontsource-variable/noto-serif-display": "^5.0.21",
+    "@fontsource/lora": "^5.2.8",
+    "@fontsource/playfair-display": "^5.2.8",
+    "@fontsource/pt-serif": "^5.2.8",
     "react-ga4": "^2.1.0",
     "react-share": "^5.1.0",
     "react-share-social": "^0.1.60"
