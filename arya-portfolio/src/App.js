@@ -96,8 +96,8 @@ function App() {
               <p>
                 These days I ship software at <strong>Barclays</strong> on a regulatory data platform called Lighthouse,
                 and I'm a founding engineer at <strong>Chaos</strong>, a dating app live on the App Store. I work across
-                the stack, spend a lot of time near AI, and care a lot about how interfaces feel — the way a story cares
-                about how it reads aloud.
+                the stack, spend a lot of time near AI, and care about how interfaces feel — the way a story cares about
+                how it reads aloud.
               </p>
               <p className="desk-signoff">
                 Welcome to the Patel Times. Today's front page is below.
@@ -118,61 +118,75 @@ function App() {
           <div className="news-grid">
             <NewsItem
               kicker="Now Reporting · Banking"
-              headline="Arya Patel ships 50+ features on regulatory platform at Barclays."
-              deck="Lighthouse goes from view-only tool to full-stack platform; first production CI/CD pipeline on BCP2 lands without a runbook."
+              headline="Patel ships 50+ features on Barclays' regulatory data platform."
+              deck="From barebones interface to production-ready tool."
               dateline="London"
               byline="Software Engineer · Feb 2025 – Present"
               accent="NEW"
-              body="At Barclays, Patel has scaled Lighthouse — an internal regulatory data platform — from UI to full-stack, owning data display, add/edit and drafting using component-based architecture. She independently navigated OpenShift, Docker and Kubernetes to get the team's first production CI/CD pipeline on Barclays' internal BCP2 platform shipped from scratch. She also contributed to AskRex, an internal compliance chatbot backed by an AWS-hosted LLM retrieval pipeline, engineering prompts and shaping how data surfaces to users. On the side: Python scripts to clean post-trade data, and direct MS SQL queries to manage regulatory records."
+              body="Took Lighthouse from a barebones interface to something the team actually relies on — 50+ features, optimistic UI, the first real CI/CD pipeline on BCP2. Also helped shape AskRex, an internal compliance chatbot, and wrote a lot of Python and SQL on the side."
             />
             <NewsItem
               kicker="Startup Desk · Consumer"
-              headline="Founding engineer at dating app Chaos owns notifications from zero to production."
-              deck="Live on the App Store, 6,000 downloads, and the AI agents are booking the dates now."
+              headline="Founding engineer at an early-stage consumer startup."
+              deck="Across the stack on a live product."
               dateline="Remote"
               byline="Founding Engineer · Jan 2025 – Present"
               accent="STARTUP"
-              body="At Chaos, Patel engineered the notifications system end-to-end — defining use cases, designing the data model, and building delivery infrastructure from zero to production on a live App Store dating app with 6,000 downloads. She created AI agents on Browserbase to automate date reservations, collapsing a multi-step flow into one optimized interaction, and ships full-stack features and fixes across the codebase as a part-time team member. Impact extends beyond engineering: end-to-end audits that informed PostHog instrumentation, user testing sessions that translated into shipped features, and contributions to MVP scoping, marketing ideation and product direction."
+              body={
+                <>
+                  Founding engineer at an early-stage consumer startup. Shipping across the stack on a live product,
+                  owning core systems end to end, and weighing in on the parts of building a company that have nothing
+                  to do with code.{' '}
+                  <a
+                    href="https://apps.apple.com/us/app/chaos-curated-date-nights/id6753730431"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="news-body-link"
+                  >
+                    Download on the App Store →
+                  </a>
+                </>
+              }
             />
             <NewsItem
               kicker="Project Desk · Civic Data"
-              headline="Spark! PM keeps 9 teams on the rails across NBC, The Grio and City of Boston."
-              deck="Agile delivery, weekly client syncs, leadership presentations — Trello kept the trains running on time."
+              headline="PM keeps 9 teams on track across NBC, The Grio and City of Boston."
+              deck="Agile, weekly syncs, one very busy Trello board."
               dateline="Boston"
               byline="Project Manager · Sep 2023 – May 2024"
-              body="Patel established Agile delivery across three client organizations — NBC, The Grio and the City of Boston — managing 9 cross-functional teams simultaneously and running sprint planning on Trello to keep data science projects on track from kickoff to delivery. She ran weekly client syncs, facilitated technical alignment between engineering and stakeholders, presented progress to leadership, and resolved blockers tailored to each client's unique needs."
+              body="Ran Agile delivery for NBC, The Grio, and the City of Boston — nine teams, three clients, one Trello board doing a lot of heavy lifting. Weekly syncs, leadership updates, and the quiet work of unblocking people before they noticed they were stuck."
             />
             <NewsItem
               kicker="Engineering Desk · E-commerce"
-              headline="Reliance intern ships standalone Financial Calculator API while juggling live storefront."
-              deck="20+ resolved issues, 10+ REST endpoints, and a healthier page-load story by the end of summer."
+              headline="Reliance intern ships a standalone Financial Calculator API."
+              deck="20+ issues closed, 10+ REST endpoints, faster loads."
               dateline="Cypress, CA"
               byline="Software Engineering Intern · Jun 2023 – Sep 2023"
-              body="At Reliance Inc., Patel resolved 20+ issues across an unfamiliar codebase and tech stack, created a Financial Calculator API with 10+ REST endpoints, and shipped it as a standalone service while integrating separate features into a live e-commerce platform. She optimized page-load performance through targeted bug fixes — building hands-on debugging skills with browser developer tools along the way."
+              body="Spent the summer in an unfamiliar codebase, closing 20+ issues and shipping a standalone Financial Calculator API with 10+ REST endpoints. Plus a quieter win: faster page loads and a permanent working friendship with the browser dev tools."
             />
             <NewsItem
               kicker="Data Desk · Climate"
-              headline="IGS intern turns climate datasets into 30+ public-facing visualizations."
-              deck="Statistical analysis in Python supports an equitable energy transition; Flourish does the rest."
+              headline="IGS intern turns climate data into 30+ public visualizations."
+              deck="Python and Flourish, for an equitable energy transition."
               dateline="Boston"
               byline="Data Science Intern · Mar 2023 – May 2023"
-              body="At the Institute for Global Sustainability, Patel applied advanced statistical analysis across large datasets in Python to uncover insights supporting an equitable energy transition. She built 30+ interactive Flourish visualizations for public-facing data stories that directly supported published research."
+              body="Dug through climate datasets in Python for the Institute for Global Sustainability, hunting for what an equitable energy transition actually looks like in the numbers. Turned the findings into 30+ Flourish visualizations that ended up in published research."
             />
             <NewsItem
               kicker="Education Desk"
-              headline="Juni Learning instructor posts 100% pass rate across Python, Java and Scratch students."
-              deck="Custom lesson plans for 10+ students, each adapted to their own learning style."
+              headline="Juni instructor posts 100% pass rate across Python, Java and Scratch."
+              deck="Custom lesson plans, 10+ students, zero fails."
               dateline="Remote"
               byline="Computer Science Instructor · Jun 2022 – May 2023"
-              body="Patel authored customized lesson plans by adapting to over 10 students' learning styles and backgrounds, resulting in a 100% pass rate for programming assessments and courses in Python, Java and Scratch."
+              body="Taught 10+ kids Python, Java, and Scratch — custom lesson plans for each one, tuned to how they actually learned instead of how a textbook thought they should. The result: a 100% pass rate and a lot of small whiteboard victories."
             />
             <NewsItem
               kicker="Research Desk · NLP"
-              headline="Questrom research assistant tunes NLP algorithm with PhD lead, tags 7,000+ lines."
-              deck="Performance and speed wins on the algorithm; high-quality training datasets for downstream ML."
+              headline="Questrom RA tunes an NLP algorithm and tags 7,000+ lines of data."
+              deck="Faster algorithm, cleaner training data."
               dateline="Boston"
               byline="Research Assistant · Jun 2022 – Dec 2022"
-              body="Patel collaborated closely with a PhD student to optimize an NLP algorithm, delivering meaningful performance and speed improvements. She conducted extensive research and data tagging of 7,000+ lines of content from top companies, contributing to high-quality training datasets for ML applications."
+              body="Teamed up with a PhD student to make an NLP algorithm faster and smarter. Tagged 7,000+ lines of corporate text along the way — the unglamorous foundation behind every model that ever ends up working."
             />
           </div>
         </section>
